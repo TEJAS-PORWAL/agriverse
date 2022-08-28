@@ -8,9 +8,12 @@
 
 .roadmap .roadmap-nav{
     /* border: 1px solid red; */
-    width: 85%;
+    width: max-content;
     height: 10%;
-    margin: 0 auto;
+    display: sticky;
+    position: absolute;
+    z-index: 5;
+    left: 10%;
     
 }
 
@@ -28,7 +31,7 @@
 .roadmap .wrapper{
     /* border: 1px solid yellow; */
     width: 90%;
-    height: 90%;
+    height: 100%;
     display: flex;
     overflow-x: auto;
     overflow-y: hidden;

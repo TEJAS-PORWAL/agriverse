@@ -1,4 +1,4 @@
-// import Footer from './components/Footer'
+import Footer from './components/Footer'
 import  Roadmap from './components/Roadmap'
 import './App.css';
 
@@ -8,7 +8,7 @@ function App() {
       <header>Header</header>
       <main>Main</main>
       <Roadmap/>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
