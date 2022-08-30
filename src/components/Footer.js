@@ -41,14 +41,14 @@ export default function Footer() {
                 <div className='mid--right'>
                     <h2 className='right--title'>Join us in the community</h2>
                     <div className='mid--right--links'>
-                        <a target="_blank" rel='noreferrer' href={fblink}><i class='fab fa-facebook-f'></i>Facebook</a>
-                        <a target="_blank" rel='noreferrer' href={Linkedlink}><i class='fab fa-linkedin-in'></i>Linkedin</a>
-                        <a target="_blank" rel='noreferrer' href={twtlink}><i class='fab fa-twitter'></i>Twitter</a>
-                        <a target="_blank" rel='noreferrer' href={Redditlink}><i class='fab fa-reddit-alien'></i>Reddit</a>
-                        <a target="_blank" rel='noreferrer' href={tellink}><i class='fab fa-telegram'></i>Telegram</a>
-                        <a target="_blank" rel='noreferrer' href={medlink}><i class='fab fa-medium-m'></i>Medium</a>
-                        <a target="_blank" rel='noreferrer' href={gitlink}><i class='fab fa-github-alt'></i>Github</a>
-                        <a target="_blank" rel='noreferrer' href={yTubelink}><i class='fab fa-youtube'></i>Youtube</a>
+                        <a target="_blank" rel='noreferrer' href={fblink}><i className='fab fa-facebook-f'></i>Facebook</a>
+                        <a target="_blank" rel='noreferrer' href={Linkedlink}><i className='fab fa-linkedin-in'></i>Linkedin</a>
+                        <a target="_blank" rel='noreferrer' href={twtlink}><i className='fab fa-twitter'></i>Twitter</a>
+                        <a target="_blank" rel='noreferrer' href={Redditlink}><i className='fab fa-reddit-alien'></i>Reddit</a>
+                        <a target="_blank" rel='noreferrer' href={tellink}><i className='fab fa-telegram'></i>Telegram</a>
+                        <a target="_blank" rel='noreferrer' href={medlink}><i className='fab fa-medium-m'></i>Medium</a>
+                        <a target="_blank" rel='noreferrer' href={gitlink}><i className='fab fa-github-alt'></i>Github</a>
+                        <a target="_blank" rel='noreferrer' href={yTubelink}><i className='fab fa-youtube'></i>Youtube</a>
                     </div>
                     <div className='mid--right--email'>
                         <a href={`mailto:${email}`}><i className="fa fa-envelope-o"></i> {email}</a>
