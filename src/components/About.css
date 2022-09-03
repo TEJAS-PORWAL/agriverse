@@ -1,0 +1,74 @@
+*
+{
+    margin: 0px;
+    padding: 0px;
+}
+.info
+{
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-style: bold;
+    text-decoration-line:underline ;
+}
+.info2
+{
+    color: rgb(5, 78, 37);
+    font-family: 'Times New Roman', Times, serif; 
+    text-align: center;  
+   
+
+}
+.about
+{
+    width: 100%;
+    background-color: rgb(210, 227, 210);
+    border: solid;
+    border-color: black;
+    border-radius: 4px;
+    border-width:  5px ;
+    font-size: 1rem;
+    
+
+}
+@media only screen and (max-width: 1200px){
+    .info2 .about .info
+    {
+        margin: 0;
+        width: 100%;
+        padding: 175px;
+    }
+}
+@media only screen and (max-width: 992px){
+    .info2 .about .info
+    {
+        padding-bottom: 0;
+        padding: 70px;
+        font-size: 15px;
+        
+    }
+}
+
+@media only screen and (max-width: 768px){
+    .top--title{
+        width: 80%;
+    }
+    .top--einput{
+        width: 75%;
+    }
+    .mid{
+        grid-template: 1fr/ 1fr;
+    }
+    .top{
+        padding-bottom: 0;
+    }
+    .top--btn{
+        margin-top: 0;
+    }
+    .mid .mid--left, .mid .mid--right{
+        width: 70%;
+        margin: 0 auto;
+    }
+} 
+
