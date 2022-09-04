@@ -1,23 +1,42 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
+import Main from './components/Main';
+import Footer from './components/Footer'
+import  Roadmap from './components/Roadmap'
+import Populatediv from './components/Populatediv';
+import About from './components/About';
 import './App.css';
 
 function App() {
+
+  setTimeout(()=>{
+    const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0);
+    if(vw < 1000){
+      let roadmap = document.getElementById('roadmap').style;
+      roadmap.display = "none";
+      let populate = document.getElementById("Populate").style;
+      populate.display = "block"
+    }
+    else{
+      let roadmap = document.getElementById('roadmap').style;
+      roadmap.display = "block";
+      let populate = document.getElementById("Populate").style;
+      populate.display = "none"
+    }
+  },10)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div className='app'>
+      <header>
+      <Navbar />
       </header>
+      <main>
+        <Main />
+      </main>
+      <About/>
+      <Populatediv />
+      <Roadmap/>
+
+      <Footer />
     </div>
   );
 }
