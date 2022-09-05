@@ -3,7 +3,6 @@ import './About.css';
 export default function About() {
   return (
     <div id='about' className='about' >
-      <div className="icon"></div>
       <h1 className="info">About</h1>
       <p><b className='info2'>Agriverse is a Game-Fi component (plant to Earn) and the largest Social network of Profitable 
 business for farmers, traders and for the enhanced users of worldwide which establishes a 

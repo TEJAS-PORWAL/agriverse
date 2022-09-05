@@ -1,9 +1,10 @@
 import Navbar from './components/Navbar';
 import Main from './components/Main';
-import Footer from './components/Footer'
+import Footer from './components/Footer';
+// import Footer from './components/Footer1';
 import  Roadmap from './components/Roadmap'
 import Populatediv from './components/Populatediv';
-import About from './components/About';
+// import About from './components/About';
 import './App.css';
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
       <main>
         <Main />
       </main>
-      <About/>
+      {/* <About/> */}
       <Populatediv />
       <Roadmap/>
 

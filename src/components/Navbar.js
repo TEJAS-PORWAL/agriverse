@@ -7,32 +7,43 @@ export default function Navbar(){
     const [ani,setani] = React.useState('unroll 0.8s ease 0s 1')
     const [pos,setpos] = React.useState('fixed')
     const [front,setfront] = React.useState(9998);
+    const [dis,setdis] = React.useState("block")
     function nav_btn_click(){
-        let nav_ground = document.getElementById("nav-ground").style;
-        setBtn((btn)=>btn===''?'active':'');
-        nav_ground.animation = ani;
-        nav_ground.position = pos;
-        if(front===-1){
-            setTimeout(() => {
-                nav_ground.zIndex = front;
-            }, 500);
+        let navbar_links = document.getElementById('navbar--links').style;
+        if(dis==="none"){
+            setTimeout(()=>{
+                navbar_links.display = dis;
+            },500)
         }
         else{
-            nav_ground.zIndex = front;
+            navbar_links.display = dis;
         }
-        setfront((front)=>front === 9998 ? -1 : 9998)
-        setani((ani)=>ani==='unroll 0.8s ease 0s 1'?'roll 0.8s ease 0s 1':'unroll 0.8s ease 0s 1');
-        setpos((pos)=>pos==='fixed'?'absolute':'fixed');
-        setTimeout(() => {
-            nav_ground.animation = "none";
-        }, 2000);
+        setTimeout(()=>{
+            let nav_ground = document.getElementById("nav-ground").style;
+            setBtn((btn)=>btn===''?'active':'');
+            nav_ground.animation = ani;
+            nav_ground.position = pos;
+            if(front===-1){
+                setTimeout(() => {
+                    nav_ground.zIndex = front;
+                }, 500);
+            }
+            else{
+                nav_ground.zIndex = front;
+            }
+            setfront((front)=>front === 9998 ? -1 : 9998)
+            setani((ani)=>ani==='unroll 0.8s ease 0s 1'?'roll 0.8s ease 0s 1':'unroll 0.8s ease 0s 1');
+            setpos((pos)=>pos==='fixed'?'absolute':'fixed');
+            setdis((dis)=>dis==="block"?"none":"block");
+            setTimeout(() => {
+                nav_ground.animation = "none";
+            }, 2000);
+        },100)
         
     }
 
     const navlinks_styles = {
         left: Btn === 'active'? '-200px':'200px',
-        // display: Btn === 'active'? 'block':'none',
-
     }
 
     const bg_styles = {
@@ -42,8 +53,6 @@ export default function Navbar(){
     function setPage(m){
         console.log(m)
     }
-
-
     
     return (
         <>
@@ -57,7 +66,7 @@ export default function Navbar(){
                     <span className='span'></span>
                     <span className='span'></span>
                 </div>
-                <div className='navbar--links'>
+                <div id="navbar--links" className='navbar--links'>
                     <ul className='navbar--links--list'>
                         <li style={navlinks_styles} onClick={()=>setPage('About')}>About</li>
                         <li style={navlinks_styles} onClick={()=>setPage('Application')}>Application</li>

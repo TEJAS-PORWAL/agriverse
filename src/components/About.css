@@ -1,39 +1,23 @@
-*{
-    margin: 0px;
-    padding: 0px;
-}
 
-.info
-{
+.info {
     color: rgb(0, 0, 0);
-    font-weight:bolder;
+    font-weight: bolder;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    text-decoration-line:underline ;
-    margin-bottom: 30px ;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration-line: underline;
+    margin-bottom: 30px;
 }
 
-.info2
-{
+.info2 {
     color: rgb(5, 78, 37);
-    font-family: 'Times New Roman', Times, serif; 
-    text-align: center;  
-   
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+
 
 }
-.about
-{
-    width: 100%;
-    background-color: rgb(210, 227, 210);
-    font-size: 1.3rem;
-    min-width: 420px;
-    padding: 5% ;
-    text-align: justify;
-}
 
-
-@media only screen and (max-width: 710px){
-    .about{
+@media only screen and (max-width: 710px) {
+    .about {
         font-size: 1rem;
     }
 }
