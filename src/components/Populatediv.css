@@ -4,13 +4,16 @@
     /* border: 1px solid red; */
     display: flex;
     width: 100%;
-    min-width: 420px;
+    min-width: 360px ;
     justify-content: center;
     flex-direction: column;
-    background-color: #59ab07;
+    background: url('../images/BG-roadmap.png');
+    background-size: auto;
+    background-repeat: no-repeat;
     padding: 15px;
     display: none;
 }
+
 .Populate .Populatediv-container {
     /* border: 1px solid red; */
     display: flex;
@@ -42,10 +45,11 @@
     font-size: 85%;
     color: aliceblue;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.208);
+    background-color: rgba(0, 0, 0, 0.423);
     block-size: 300px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
+    cursor: grab;
 }
 
 .Populatediv-container .quarter-div h2{
@@ -64,6 +68,8 @@
 }
 
 .scroll-btn {
+    background-color:#4d8a0f;
+    color: #80ff00;
     padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
