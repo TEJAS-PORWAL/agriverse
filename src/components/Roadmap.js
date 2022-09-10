@@ -113,7 +113,7 @@ export default function Roadmap() {
   
   const scrolly = ()=>{ 
     setTimeout(()=>{
-      window.scrollTo(0,1420);
+      window.scrollTo(0,1720);
     },1000)
   }
   return (

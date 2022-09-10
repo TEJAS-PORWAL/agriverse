@@ -18,58 +18,7 @@ footer {
     min-width: 360px;
 }
 
-/* *********CONTACT US************** */
-.footer--contact{
-    /* background-color: white; */
-    color: var(--primary);
-    width: 90%;
-    margin: 0 auto 50px auto;
-}
 
-.contact--title{
-    text-align: center;
-}
-
-.contact--cards{
-    display: grid;
-    grid-template: 1fr / repeat(4, 1fr);
-    gap: 20px;
-}
-
-.contact--cards div{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    border-left: 1px solid grey;
-}
-
-.contact--cards div:nth-child(1){
-    border-left: none;
-}
-
-.contact--cards div img{
-    width: 200px;
-    height: 100px;
-    margin: 0 auto;
-    text-align: center;
-    border: none;
-    outline: none;
-}
-
-.contact--cards div h2{
-    text-align: center;
-}
-
-.contact--cards div a{
-    text-decoration: none;
-    color: var(--default);
-    text-align: center;
-}
-
-.contact--cards div a:hover{
-    color: var(--primary);
-}
 /* ******TOP************ */
 .top {
     margin: 0 auto;
@@ -139,7 +88,56 @@ footer {
     display: block;
 }
 
+/* *****************Center***************** */
+.center
+{
+    width: 100%;
 
+}
+.cont
+{
+    margin-left: 690px;
+    color: white;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.center-first
+{
+    margin-left: 200px;
+    /* padding-right: 50px; */
+    border-right: solid;   
+    color: white;
+    padding-right: 40px;
+    text-align: center;
+  
+}
+.center-2
+{
+    color: white;
+   /*width: 33.33%;*/
+    margin-left :150px;
+    text-align: center;
+  
+   
+}
+.center-3
+{
+    margin-left: 100px;
+    color: white;
+    border-left: solid;
+    padding-left: 100px;
+    text-align: center;
+  
+}
+.links
+{
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 200px;
+    margin-right: 100px; 
+}
 
 /* *****************MIDDLE****************** */
 
@@ -371,12 +369,6 @@ footer {
     }
 }
 @media only screen and (max-width: 900px){
-    .contact--cards{
-        grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    }
-    .contact--cards div:nth-child(3){
-        border: none;
-    }
     .mid .mid--left,.mid .mid--right{
         width: 90%;
     }
@@ -431,20 +423,6 @@ footer {
         grid-template: 1fr / auto;
         width: 100%;
         margin: 0 auto;
-    }
-    .contact--cards{
-        display: grid;
-        grid-template: repeat(4, 1fr) / 1fr;
-        gap: 10px;
-    }
-    .contact--cards div{
-        border-left: none;
-        border-bottom: 1px solid grey !important;
-        width: 60%;
-        margin: 0 auto;
-    }
-    .contact--cards div:nth-child(4){
-        border-bottom: none !important;
     }
 }
 
@@ -514,4 +492,8 @@ footer {
 
 .btn:hover {
     background: transparent;
+}
+.fa
+{
+    size: 50px;
 }
