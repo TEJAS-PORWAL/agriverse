@@ -1,5 +1,7 @@
 import React from "react";
 import "./Footer.css";
+// import web_icon from "../images/web_icon.gif";
+// import Support from "../images/Support_icon_1.gif";
 
 export default function Footer() {
   const email = "info@agriverse.com";
@@ -43,6 +45,7 @@ export default function Footer() {
             className="top--einput"
             type="email"
             placeholder="Your email address"
+            autoComplete="off"
           />
           <span></span>
           <button className="top--btn" type="submit">
@@ -70,15 +73,15 @@ export default function Footer() {
               </a>
             </div>
             <div className="contact-card3">
-              <img src="" alt="" />
+              <img src="" alt="web_icon" />
               <h2>MARKETING</h2>
               <a href={contactUsLinks[2]["link"]}>
                 {contactUsLinks[2]["text"]}
               </a>
             </div>
             <div className="contact-card4">
-              <img src="" alt="" />
-              <h2>MARKETING</h2>
+              <img src="../images/footer.jpeg" alt="" />
+              <h2>Join US</h2>
               <a href={contactUsLinks[3]["link"]}>
                 {contactUsLinks[3]["text"]}
               </a>
@@ -95,6 +98,7 @@ export default function Footer() {
                 id="name"
                 name="name"
                 placeholder="Full Name"
+                autoComplete="off"
               />
               <input
                 className="form--email"
@@ -102,6 +106,7 @@ export default function Footer() {
                 id="mail"
                 name="email"
                 placeholder="Email Address"
+                autoComplete="off"
               />
               <input
                 className="form--mobile"
@@ -110,9 +115,10 @@ export default function Footer() {
                 name="mobile"
                 placeholder="Moblie"
                 pattern="[0-9]{10}"
-                maxlength="10"
+                maxLength="10"
+                autoComplete="off"
               />
-              <input type="text" placeholder="Your Message" />
+              <input type="text" placeholder="Your Message" autoComplete="off"/>
             </div>
             <button className="form--btn btn">
               <span className="noselect">SEND MESSAGE</span>

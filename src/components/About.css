@@ -1,11 +1,10 @@
-
 .about
 {
     width: 100%;
     background-color: black;
     font-size: 1.3rem;
     min-width: 360px ;
-    padding: 5% ;
+    padding: 80px 100px 165px;
     text-align: justify;
     color: rgb(221, 221, 221);
 }

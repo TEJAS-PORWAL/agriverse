@@ -1,0 +1,14 @@
+.nft{
+    background-color: black;
+    color: #fff;
+    margin: -25px 0!important;
+    padding: 100px 100px 185px;
+   
+}
+.nft h1{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.nft p{
+    text-align: center;
+}
