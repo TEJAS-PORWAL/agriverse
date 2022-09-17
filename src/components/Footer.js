@@ -110,7 +110,7 @@ export default function Footer() {
                 name="mobile"
                 placeholder="Moblie"
                 pattern="[0-9]{10}"
-                maxlength="10"
+                maxLength="10"
               />
               <input type="text" placeholder="Your Message" />
             </div>

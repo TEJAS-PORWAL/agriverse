@@ -5,8 +5,8 @@ import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import "./Cards.css";
-import { Link, Outlet } from "react-router-dom";
-import { MContext } from "./MyProvider";
+import {Link,Outlet} from "react-router-dom";
+import {MContext} from "./MyProvider";
 
 export default function Cards(props) {
   const [iteming, setitem] = useState(dating);
@@ -18,15 +18,16 @@ export default function Cards(props) {
     else return(
     <MContext.Consumer  key={render.id}>
       {(context) => (
-        <Link to={"Cardsection"}>
+        <Link to={`Cardsection`}>
           <div
-            id={String(render.id)}
             className="card-div"
             style={{ backgroundImage:`url(${render.card_img})`}}
             onClick={() => {
               setTimeout(() => {
-                window.scrollTo(0,render.id*context.state.message-context.state.message);
-              }, 1);
+                let i = (render.id*context.state.message) - context.state.message;
+                window.scrollTo(0,i);
+                context.setNum(render.id);
+              }, 100);
             }}
           >
             <h2>{render.card_title}</h2>

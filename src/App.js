@@ -9,28 +9,31 @@ import TermCards from "./components/TermCards";
 import Cardsection from "./components/Cardsection";
 import { Routes, Route } from "react-router-dom";
 import MyProvider from "./components/MyProvider";
+import ErrorBoundary from "./components/ErrorBoundary";
 import "./App.css";
 
 function App() {
-  window.onload = setTimeout(() => {
-    const vw = Math.max(
-      document.documentElement.clientWidth || 0,
-      window.innerWidth || 0
-    );
-    if (vw < 1000) {
-      let roadmap = document.getElementById("roadmap").style;
-      roadmap.display = "none";
-      let populate = document.getElementById("Populate").style;
-      populate.display = "block";
-    } else {
-      let roadmap = document.getElementById("roadmap").style;
-      roadmap.display = "block";
-      let populate = document.getElementById("Populate").style;
-      populate.display = "none";
-    }
-  }, 10);
+  // window.onload = 
+  // setTimeout(() => {
+  //   const vw = Math.max(
+  //     document.documentElement.clientWidth || 0,
+  //     window.innerWidth || 0
+  //   );
+  //   if (vw < 1000) {
+  //     let roadmap = document.getElementById("roadmap").style;
+  //     roadmap.display = "none";
+  //     let populate = document.getElementById("Populate").style;
+  //     populate.display = "block";
+  //   } else {
+  //     let roadmap = document.getElementById("roadmap").style;
+  //     roadmap.display = "block";
+  //     let populate = document.getElementById("Populate").style;
+  //     populate.display = "none";
+  //   }
+  // }, 10);
 
   return (
+    <ErrorBoundary>
     <MyProvider>
       <Routes>
         <Route
@@ -53,11 +56,12 @@ function App() {
         <Route exact path="About" element={<About />} />
         <Route
           exact
-          path="Cardsection"
+          path="Cardsection/*"
           element={<Cardsection/>}
         ></Route>
       </Routes>
     </MyProvider>
+    </ErrorBoundary>
   );
 }
 export default App;
