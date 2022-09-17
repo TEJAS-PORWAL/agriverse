@@ -9,34 +9,45 @@
     gap: 20px;
     background: url("../images/termcards.jpg");
     background-size: contain;
+    min-height: 500px;
 }
 
 .cards--cont{
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;;
+    font-size: 1.3rem;
 }
 
 .termcards{
-    width: 250px;
-    height: 400px;
+    min-width: 250px;
+    min-height: 400px;
     display: flex;
     align-items: center;
     justify-content: center;
     /* margin: 0 auto; */
-    background-color: rgba(255, 255, 255, 0.721);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     cursor: pointer;
     transition: 0.1s;
     text-decoration: none!important;
     color: black;
-}
-.termcards:nth-child(1),
-.termcards:nth-child(3){
     position: relative;
-    top: 80px;
+}
+
+.termcards:nth-child(2),
+.termcards:nth-child(4){
+    top: 40px;
 }
 
 .termcards:hover{
     box-shadow: 0px 0px 10px 5px #54ff00;
+}
+
+@media only screen and (max-width: 700px){
+    .termcards{
+        /* position: absolute; */
+        color: red;
+        /* top: 50%;
+        left: 50%; */
+    }
 }

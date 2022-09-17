@@ -57,6 +57,8 @@ body{
     border-radius: 0 0 14px 14px;
     background-color: var(--prim) ;
     margin: 0;
+    text-decoration: none !important;
+    border: none !important;
 }
 
 

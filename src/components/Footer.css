@@ -49,16 +49,22 @@ footer {
 }
 
 .contact--cards div img{
-    width: 200px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 50px;
     margin: 0 auto;
     text-align: center;
     border: none;
     outline: none;
+    /* transform: scale(0.6); */
 }
+.contact--cards div img[name="market"]{
+    color: red;
+}
+
 
 .contact--cards div h2{
     text-align: center;
+    color: var(--primary);
 }
 
 .contact--cards div a{
@@ -69,6 +75,9 @@ footer {
 
 .contact--cards div a:hover{
     color: var(--primary);
+}
+.contact--cards div a:hover h2{
+    color: var(--primary3);
 }
 /* ******TOP************ */
 .top {
