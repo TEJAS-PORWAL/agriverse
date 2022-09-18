@@ -1,5 +1,7 @@
 import React from 'react'
 import './Navbar.css'
+import WhitePaperPDF from '../../src/Whitepaper.pdf';
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
@@ -68,12 +70,25 @@ export default function Navbar(){
                 </div>
                 <div id="navbar--links" className='navbar--links'>
                     <ul className='navbar--links--list'>
+                    <Link to="About" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('About')}>About</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Application')}>Application</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E game</li>
+                    </Link>
+                    <Link to="/Roadmap" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Roadmap')}>Roadmap</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li>
+                    </Link>
+                    <Link to={WhitePaperPDF} target="_blank" style={{textDecoration:"none"}}>
+                        {/* <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li> */}
+                        <li style={navlinks_styles}>Whitepaper</li>
+                    </Link>
                         <li style={navlinks_styles} onClick={()=>setPage('Team')}>Team/Vision</li>
+                    <Link to="About" style={{textDecoration:"none"}}>
+                    </Link>
                     </ul>
                 </div>
             </div>
