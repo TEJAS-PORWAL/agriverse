@@ -2,39 +2,43 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin: 0 auto;
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 150px;
     gap: 20px;
     background: url("../images/termcards.jpg");
     background-size: contain;
+    min-height: 500px;
+    min-width: 360px;
+    flex-wrap: wrap;
 }
 
 .cards--cont{
     text-decoration: none;
     color: black;
-    font-size: 1.3rem;;
+    font-size: 1.3rem;
 }
 
 .termcards{
-    width: 250px;
-    height: 400px;
+    min-width: 250px;
+    min-height: 350px;
     display: flex;
+    margin: 30px auto;
     align-items: center;
     justify-content: center;
-    /* margin: 0 auto; */
-    background-color: rgba(255, 255, 255, 0.721);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     cursor: pointer;
     transition: 0.1s;
     text-decoration: none!important;
-    color: black;
-}
-.termcards:nth-child(1),
-.termcards:nth-child(3){
+    color: rgb(0, 0, 0);
     position: relative;
-    top: 80px;
+    font-family: "Open Sans", sans-serif;
+}
+
+.termcards:nth-child(2),
+.termcards:nth-child(4){
+    top: 40px;
 }
 
 .termcards:hover{
