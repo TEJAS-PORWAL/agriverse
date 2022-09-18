@@ -1,7 +1,7 @@
 .roadmap {
     width: 100%;
     height: 100%;
-    min-width: 360px;
+    min-width: 420px;
     overflow:hidden;
     scroll-behavior: smooth;
     background: url("../images/BG-roadmap.png");
@@ -96,7 +96,7 @@
     scroll-snap-destination: center;
 }
 
-.roadmap .wrapper .wrap-item .div-box {
+.roadmap .wrapper .wrap-item .div-boxing {
     width: 100%;
     height: 100%;
     /* background-color: rgba(255, 255, 255, 0.582); */
@@ -105,7 +105,7 @@
     align-items: flex-end;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses{
     /* border: 1px solid rebeccapurple; */
     min-width: 200px;
     min-height: 200px;
@@ -124,14 +124,14 @@
     z-index: 9;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box:hover{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses:hover{
     width: max-content;
     background-color: rgba(0, 0, 0, 0.274);
     color: #fff;
     flex-direction: row;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box span{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses span{
     min-width: 15px;
     min-height: 15px;
     border-radius: 100%;
@@ -139,7 +139,7 @@
     background-color: #fff;
     z-index: 99;
 }
-.roadmap .wrapper .wrap-item .div-box .card-box div{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses div{
     /* border: 1px solid red; */
     width: 100%;
     height: 100%;
@@ -152,13 +152,13 @@
 }
 
 
-.roadmap .wrapper .wrap-item .div-box .card-box div h2 {
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses div h2 {
     width: max-content;
     position: relative;
     left: 7px;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box ul {
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses ul {
     /* background-color: #fff; */
     position: relative;
     bottom: 15px;
@@ -178,11 +178,11 @@
     z-index: 99;
 }
 
-#right-btn {
+#right-btning {
     left:90%;
 }
 
-#left-btn {
+#left-btning {
     left: 3%;
 }
 

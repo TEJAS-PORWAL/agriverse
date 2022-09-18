@@ -12,12 +12,19 @@
 
 .cardsection .section-cards{
     display: flex;
-    padding: 50px 50px 160px;
+    padding: 125px 50px 160px;
     flex-wrap: wrap;
     justify-content: center;
     scroll-snap-align:center;
     scroll-snap-stop: always;
     background-color: #fff;
+}
+
+.cardsection .section-cards:nth-child(1),
+.cardsection .section-cards:nth-child(7),
+.cardsection .section-cards:nth-child(13),
+.cardsection .section-cards:nth-child(19){
+    padding: 50px 50px 160px;
 }
 
 .cardsection .section-cards:nth-child(even){
@@ -30,7 +37,6 @@
     width: 100%;
     /* border: 1px solid red; */
     text-align: center;
-    margin-bottom: 70px;
     padding: 10px;
     text-decoration: underline;
 }
@@ -92,6 +98,10 @@
     margin-top: 30px;
     font-size: 90%;
 }
+.cardsection .section-cards .section_content li{
+    font-size: larger;
+    padding: 5px;
+}
 
 .cardsection .section-cards .section_contenting{
     width: 90%;
@@ -100,6 +110,7 @@
 }
 
 .cardsection .section-cards .card-contain{
+    /* border: 1px solid rebeccapurple; */
     margin-bottom: -160px;
 }
 

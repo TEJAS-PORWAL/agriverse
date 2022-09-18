@@ -1,5 +1,11 @@
 import React from "react";
 import "./Footer.css";
+import web_icon from "../images/web_icon.gif";
+import join_us from "../images/join_us_icon.gif";
+import support_icon from "../images/Support_icon.gif";
+import market_icon from "../images/coingeckologo.png";
+
+// import Support from "../images/Support_icon_1.gif";
 
 export default function Footer() {
   const email = "info@agriverse.com";
@@ -43,6 +49,7 @@ export default function Footer() {
             className="top--einput"
             type="email"
             placeholder="Your email address"
+            autoComplete="off"
           />
           <span></span>
           <button className="top--btn" type="submit">
@@ -56,30 +63,30 @@ export default function Footer() {
           <h1 className="contact--title">CONTACT US</h1>
           <div className="contact--cards">
             <div className="contact-card1">
-              <img src="" alt="" />
-              <h2>ADDRESS</h2>
               <a href={contactUsLinks[0]["link"]}>
+              <img src={web_icon} alt="" naame="market"/>
+              <h2>ADDRESS</h2>
                 {contactUsLinks[0]["text"]}
               </a>
             </div>
             <div className="contact-card2">
-              <img src="" alt="" />
-              <h2>SUPPORT</h2>
               <a href={contactUsLinks[1]["link"]}>
+              <img src={support_icon} alt="" />
+              <h2>SUPPORT</h2>
                 {contactUsLinks[1]["text"]}
               </a>
             </div>
             <div className="contact-card3">
-              <img src="" alt="" />
-              <h2>MARKETING</h2>
               <a href={contactUsLinks[2]["link"]}>
+            <img src={market_icon} alt="web_icon" />
+              <h2>MARKETING</h2>
                 {contactUsLinks[2]["text"]}
               </a>
             </div>
             <div className="contact-card4">
-              <img src="" alt="" />
-              <h2>MARKETING</h2>
               <a href={contactUsLinks[3]["link"]}>
+              <img src={join_us} alt="" />
+              <h2>Join US</h2>
                 {contactUsLinks[3]["text"]}
               </a>
             </div>
@@ -95,6 +102,7 @@ export default function Footer() {
                 id="name"
                 name="name"
                 placeholder="Full Name"
+                autoComplete="off"
               />
               <input
                 className="form--email"
@@ -102,6 +110,7 @@ export default function Footer() {
                 id="mail"
                 name="email"
                 placeholder="Email Address"
+                autoComplete="off"
               />
               <input
                 className="form--mobile"
@@ -110,9 +119,10 @@ export default function Footer() {
                 name="mobile"
                 placeholder="Moblie"
                 pattern="[0-9]{10}"
-                maxlength="10"
+                maxLength="10"
+                autoComplete="off"
               />
-              <input type="text" placeholder="Your Message" />
+              <input type="text" placeholder="Your Message" autoComplete="off"/>
             </div>
             <button className="form--btn btn">
               <span className="noselect">SEND MESSAGE</span>
