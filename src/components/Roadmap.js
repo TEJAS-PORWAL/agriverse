@@ -120,8 +120,8 @@ export default function Roadmap() {
   return (
     <ErrorBoundary>
       <div id ="roadmap" className="roadmap">
+        <h1>ROADMAP</h1>
         <h3>WE HAVE BIG PLANS FOR THE FUTURE OF REQUEST</h3>
-        <h1>Roadmap</h1>
         <div className="roadmap-nav">
           <a id="anch-1" href="#2022" 
           onClick={scrolly}
@@ -189,14 +189,12 @@ export default function Roadmap() {
                   <h2>Q4</h2>
                   <ul>
                     <li>WhitePaper Release</li>
-                    <li>Website Launch</li>
-                    <li>Contract Creation</li>
+                    <li>Website Launch and Contract Creation</li>
                     <li>Listing on CMC and Goingecko</li>
                     <li>Partnership with some good launchpads</li>
                     <li>Conducting Presale and IDO</li>
                     <li>Purshasing land in land</li>
-                    <li>The Agriverse Web app release</li>
-                    <li>The Agriverse android app beta release</li>
+                    <li>The Agriverse Web app release. The Agriverse android app beta release</li>
                   </ul>
                 </div>
               </div>
@@ -209,8 +207,7 @@ export default function Roadmap() {
                 <div>
                   <h2>Q1</h2>
                   <ul>
-                    <li>
-                    Introducing 7-10 long-term, mid term and short term crops</li>
+                    <li>Introducing 7-10 long-term, mid term and short term crops</li>
                     <li>Intensive expansion and leasing with farmers </li>
                     <li>NFT marketplace launch</li>
                     <li>Release of second batch of  NF's</li>
@@ -267,11 +264,12 @@ export default function Roadmap() {
                 <div>
                   <h2>Q1</h2>
                   <ul>
-                  <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
                     <li>create brand name in India</li>
                     <li>Executing exporting Marketing plan</li>
                     <li>Introducing livestock's in TheAgriverse ecosystem</li>
-                    <li>Partnership with some well known institutions/organizations.</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                    <li><strong>COMING SOON</strong></li>
                   </ul>
                 </div>
               </div>
@@ -280,11 +278,12 @@ export default function Roadmap() {
                 <div>
                   <h2>Q2</h2>
                   <ul>
-                  <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
                     <li>create brand name in India</li>
                     <li>Executing exporting Marketing plan</li>
                     <li>Introducing livestock's in TheAgriverse ecosystem</li>
-                    <li>Partnership with some well known institutions/organizations.</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                    <li><strong>COMING SOON</strong></li>
                   </ul>
                 </div>
               </div>
@@ -293,11 +292,12 @@ export default function Roadmap() {
                 <div>
                   <h2>Q3</h2>
                   <ul>
-                  <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
                     <li>create brand name in India</li>
                     <li>Executing exporting Marketing plan</li>
                     <li>Introducing livestock's in TheAgriverse ecosystem</li>
-                    <li>Partnership with some well known institutions/organizations.</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                    <li><strong>COMING SOON</strong></li>
                   </ul>
                 </div>
               </div>
@@ -306,11 +306,12 @@ export default function Roadmap() {
                 <div>
                   <h2>Q4</h2>
                   <ul>
-                  <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
                     <li>create brand name in India</li>
                     <li>Executing exporting Marketing plan</li>
                     <li>Introducing livestock's in TheAgriverse ecosystem</li>
-                    <li>Partnership with some well known institutions/organizations.</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                    <li><strong>COMING SOON</strong></li>
                   </ul>
                 </div>
               </div>

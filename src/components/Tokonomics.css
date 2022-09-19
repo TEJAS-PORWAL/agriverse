@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 :root {
     --primary: #59ab07;
     --primary2: #4d8a0f;
@@ -17,8 +26,9 @@
 
 .toko--cont .toko--heading{
     color: var(--default);
-    font-family: 'Poppins', sans-serif;
-
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 350%;
 }
 
 .toko{
@@ -31,8 +41,8 @@
 }
 
 .toko--cards{
-    max-width: 440px;
-    max-height: 440px;
+    max-width: 550px;
+    max-height: 550px;
     margin: 15px auto;
     border-radius: 10px;
     /* background-color: var(--primary2); */
@@ -43,7 +53,11 @@
     /* cursor: pointer; */
     border-radius: 10px;
     overflow: hidden;
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 20px rgb(160, 234, 160);
 }
+
 
 .toko--cards img{
     max-width: 100%;
@@ -54,7 +68,7 @@
 .toko--cards:hover{
     /* transform: rotate3d(1, 0, 0.3, 15deg); */
     box-shadow: 0px 0px 30px black;
-    animation: shake 1s ease;
+    animation: shake 0.8s ease;
     
 
     /* will-change: transform; transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); */
@@ -63,7 +77,7 @@
 
 @keyframes shake {
     0%{
-        transform: rotate3d(1, 1, 1, -40deg);
+        transform: rotate3d(1, 1, 1, -20deg);
     }
     100%{
         transform: rotate3d(1, 1, 1, 0deg);

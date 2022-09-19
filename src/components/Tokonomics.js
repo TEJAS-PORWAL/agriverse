@@ -1,13 +1,13 @@
 import React from 'react'
 import "./Tokonomics.css";
-import Tokenomics1 from "../images/Tokenomics1.jpg";
-import Tokenomics2 from "../images/Tokenomics2.jpg";
+import Tokenomics2 from "../images/T1.jpg";
+import Tokenomics1 from "../images/T2.jpg";
 export default function Tokonomics() {
 
-  const imagesLink = [
-    "../images/Tokenomics1.jpg",
-    ""
-  ]
+  // const imagesLink = [
+  //   "../images/Tokenomics1.jpg",
+  //   ""
+  // ]
   
   return (
     <div className='toko--cont'>

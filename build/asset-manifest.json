@@ -1,20 +1,34 @@
 {
   "files": {
-    "main.css": "/FC/static/css/main.a2360a3c.css",
-    "main.js": "/FC/static/js/main.c0f9f5b1.js",
-    "static/js/787.b879759e.chunk.js": "/FC/static/js/787.b879759e.chunk.js",
-    "static/media/start.mp4": "/FC/static/media/start.8069125f0308bce56083.mp4",
-    "static/media/BG-roadmap.png": "/FC/static/media/BG-roadmap.a3c5c4503bd6cb595967.png",
-    "static/media/termcards.jpg": "/FC/static/media/termcards.468f505ffb08a634692f.jpg",
-    "static/media/bg-top.jpg": "/FC/static/media/bg-top.bf80a63888c32d7961f1.jpg",
-    "static/media/foot-bg.jpg": "/FC/static/media/foot-bg.6c795cb41cb3f8987d64.jpg",
-    "index.html": "/FC/index.html",
-    "main.a2360a3c.css.map": "/FC/static/css/main.a2360a3c.css.map",
-    "main.c0f9f5b1.js.map": "/FC/static/js/main.c0f9f5b1.js.map",
-    "787.b879759e.chunk.js.map": "/FC/static/js/787.b879759e.chunk.js.map"
+    "main.css": "/static/css/main.e4751bcc.css",
+    "main.js": "/static/js/main.9e9197d7.js",
+    "static/js/787.054d5ca9.chunk.js": "/static/js/787.054d5ca9.chunk.js",
+    "static/media/video.mp4": "/static/media/video.e183171cac1750c324e9.mp4",
+    "static/media/T2.jpg": "/static/media/T2.e4c84adb1dcf7b1a8f87.jpg",
+    "static/media/Whitepaper.pdf": "/static/media/Whitepaper.ea3b4d41f47341998884.pdf",
+    "static/media/T1.jpg": "/static/media/T1.5111d93dcc3db1eb7623.jpg",
+    "static/media/join_us_icon.gif": "/static/media/join_us_icon.4cabccd234633e0e9bea.gif",
+    "static/media/BG-roadmap.png": "/static/media/BG-roadmap.a3c5c4503bd6cb595967.png",
+    "static/media/Marketing icon.gif": "/static/media/Marketing icon.fcc217a35db50e084a68.gif",
+    "static/media/web_icon.gif": "/static/media/web_icon.13b730e4be5959eb75ec.gif",
+    "static/media/bg1.jpg": "/static/media/bg1.b8e20db8bc5e976f336c.jpg",
+    "static/media/bg4.jpg": "/static/media/bg4.468f505ffb08a634692f.jpg",
+    "static/media/termcards.jpg": "/static/media/termcards.468f505ffb08a634692f.jpg",
+    "static/media/treemain.png": "/static/media/treemain.54ac2a50ce4b74daba99.png",
+    "static/media/Support_icon.gif": "/static/media/Support_icon.44456ca88806bd9adb76.gif",
+    "static/media/bg-top.jpg": "/static/media/bg-top.bf80a63888c32d7961f1.jpg",
+    "static/media/coingeckologo.png": "/static/media/coingeckologo.e06bae6439f471a45336.png",
+    "static/media/coinmarketcaplogo.png": "/static/media/coinmarketcaplogo.f94b140edbeaa4db34da.png",
+    "static/media/DigitoneRegular.woff": "/static/media/DigitoneRegular.657a92ff9493a831e8b7.woff",
+    "static/media/foot-bg.jpg": "/static/media/foot-bg.6c795cb41cb3f8987d64.jpg",
+    "static/media/DigitoneRegular.woff2": "/static/media/DigitoneRegular.d233041b49b556abb730.woff2",
+    "index.html": "/index.html",
+    "main.e4751bcc.css.map": "/static/css/main.e4751bcc.css.map",
+    "main.9e9197d7.js.map": "/static/js/main.9e9197d7.js.map",
+    "787.054d5ca9.chunk.js.map": "/static/js/787.054d5ca9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2360a3c.css",
-    "static/js/main.c0f9f5b1.js"
+    "static/css/main.e4751bcc.css",
+    "static/js/main.9e9197d7.js"
   ]
 }

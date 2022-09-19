@@ -74,10 +74,16 @@ export default function Navbar(){
                         <li style={navlinks_styles} onClick={()=>setPage('About')}>About</li>
                     </Link>
                     <Link to="Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Products')}>Products</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Buy Token')}>Buy AV Tokens</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Application')}>Application</li>
                     </Link>
                     <Link to="Comingsoon" style={{textDecoration:"none"}}>
-                        <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E game</li>
+                        <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E Game</li>
                     </Link>
                     <Link to="/Roadmap" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Roadmap')}>Roadmap</li>
@@ -86,9 +92,9 @@ export default function Navbar(){
                         {/* <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li> */}
                         <li style={navlinks_styles}>Whitepaper</li>
                     </Link>
-                        <li style={navlinks_styles} onClick={()=>setPage('Team')}>Team/Vision</li>
-                    <Link to="About" style={{textDecoration:"none"}}>
-                    </Link>
+                    {/* <Link to="/Vision" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Vision')}>Team/Vision</li>
+                    </Link> */}
                     </ul>
                 </div>
             </div>
