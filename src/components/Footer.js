@@ -1,5 +1,11 @@
 import React from "react";
 import "./Footer.css";
+import web_icon from "../images/web_icon.gif";
+import join_us from "../images/join_us_icon.gif";
+import support_icon from "../images/Support_icon.gif";
+import market_icon from "../images/Marketing icon.gif";
+
+// import Support from "../images/Support_icon_1.gif";
 
 export default function Footer() {
   const email = "info@agriverse.com";
@@ -10,7 +16,7 @@ export default function Footer() {
   const Linkedlink = "https://linkedin.com";
   const gitlink = "https://github.com";
   const medlink = "https://medium.com/@theagriverse";
-  // const instlink = 'https://instagram.com/theagriverse';
+  const instlink = 'https://instagram.com/theagriverse';
   const Redditlink = "https://reddit.com/r/theagriverse";
 
   const contactUsLinks = [
@@ -19,16 +25,16 @@ export default function Footer() {
         link: "https://www.argiverse.com"
     },
     {
-        text: "info@agriverse.com",
-        link: "mailto:info@agriverse.com"
+        text: "support@theagriverse.com",
+        link: "mailto:support@theagriverse.com"
     },
     {
-        text: "www.agriverse.com",
-        link: "https://www.argiverse.com"
+        text: "marketing@theagriverse.com",
+        link: "mailto:marketing@theagriverse.com"
     },
     {
-        text: "www.agriverse.com",
-        link: "https://www.argiverse.com"
+        text: "click here",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSf2Vf3yYEO6HqqRSO1kKKpf8_7saY06t4GR2YvMKnK0q6Lk_Q/viewform?usp=sf_link"
     }
 ]
   
@@ -43,6 +49,7 @@ export default function Footer() {
             className="top--einput"
             type="email"
             placeholder="Your email address"
+            autoComplete="off"
           />
           <span></span>
           <button className="top--btn" type="submit">
@@ -56,30 +63,30 @@ export default function Footer() {
           <h1 className="contact--title">CONTACT US</h1>
           <div className="contact--cards">
             <div className="contact-card1">
-              <img src="" alt="" />
-              <h2>ADDRESS</h2>
               <a href={contactUsLinks[0]["link"]}>
+              <img src={web_icon} alt="" naame="market"/>
+              <h2>ADDRESS</h2>
                 {contactUsLinks[0]["text"]}
               </a>
             </div>
             <div className="contact-card2">
-              <img src="" alt="" />
-              <h2>SUPPORT</h2>
               <a href={contactUsLinks[1]["link"]}>
+              <img src={support_icon} alt="" />
+              <h2>SUPPORT</h2>
                 {contactUsLinks[1]["text"]}
               </a>
             </div>
             <div className="contact-card3">
-              <img src="" alt="" />
-              <h2>MARKETING</h2>
               <a href={contactUsLinks[2]["link"]}>
+            <img src={market_icon} alt="web_icon" />
+              <h2>MARKETING</h2>
                 {contactUsLinks[2]["text"]}
               </a>
             </div>
             <div className="contact-card4">
-              <img src="" alt="" />
-              <h2>MARKETING</h2>
               <a href={contactUsLinks[3]["link"]}>
+              <img src={join_us} alt="" />
+              <h2>Join US</h2>
                 {contactUsLinks[3]["text"]}
               </a>
             </div>
@@ -87,7 +94,7 @@ export default function Footer() {
         </div>
         <div className="mid--left">
           <form className="mid--form">
-            <h2 className="form--title">Send a message</h2>
+            <h2 className="form--title">Queries</h2>
             <div className="form--inputs">
               <input
                 type="text"
@@ -95,6 +102,7 @@ export default function Footer() {
                 id="name"
                 name="name"
                 placeholder="Full Name"
+                autoComplete="off"
               />
               <input
                 className="form--email"
@@ -102,6 +110,7 @@ export default function Footer() {
                 id="mail"
                 name="email"
                 placeholder="Email Address"
+                autoComplete="off"
               />
               <input
                 className="form--mobile"
@@ -110,20 +119,24 @@ export default function Footer() {
                 name="mobile"
                 placeholder="Moblie"
                 pattern="[0-9]{10}"
-                maxlength="10"
+                maxLength="10"
+                autoComplete="off"
               />
-              <input type="text" placeholder="Your Message" />
+              <input type="text" placeholder="Your Message" autoComplete="off"/>
             </div>
             <button className="form--btn btn">
-              <span className="noselect">SEND MESSAGE</span>
+              <span className="noselect">SEND </span>
             </button>
           </form>
         </div>
         <div className="mid--right">
-          <h2 className="right--title">Join us in the community</h2>
+          <h2 className="right--title">Join our community</h2>
           <div className="mid--right--links">
             <a target="_blank" rel="noreferrer" href={fblink}>
               <i className="fab fa-facebook-f"></i>
+            </a>
+            <a target="_blank" rel="noreferrer" href={instlink}>
+              <i className="fab fa-instagram"></i>
             </a>
             <a target="_blank" rel="noreferrer" href={Linkedlink}>
               <i className="fab fa-linkedin-in"></i>
@@ -156,8 +169,8 @@ export default function Footer() {
       </div>
       <div className="bottom">
         <p>
-          &copy;2022. Designed by{" "}
-          <a href="https://facebook.com/theagriverse">Mrlcreation</a>
+          &copy; {" "}
+          <a href="https://facebook.com/theagriverse">AGRIVERSE </a>2022. All rights reserved
         </p>
       </div>
     </footer>
