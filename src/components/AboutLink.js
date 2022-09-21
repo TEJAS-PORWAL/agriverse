@@ -27,12 +27,14 @@ export default function AboutLink() {
 
       <div className="alink">
         <div className="about--us">
+          <p> 
         Plant to Earn. A Web 3.0 based decentralized Agriculture where
         you get real piece of land/crop/livestock as NFT with 24/7 live
         monitoring through special drones and cameras. Also paying
-        unbelievable APY for all your assets/ crops/NFTS and play to
+        unbelievable APY for all your assets/crops/NFTS and play to
         earn game which keeps entertaining and ensures continuous earning for you.
         The mode of play is a new concept in the world of gaming and one that gamers can leverage on in order maximize profit.
+          </p>
         </div>
         <div>
           <h1 className="at">About</h1>

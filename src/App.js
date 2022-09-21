@@ -54,7 +54,7 @@ function App() {
                 <Navbar />
                 <Main />
                 <AboutLink />
-                {/* <TermCards /> */}
+                <TermCards />
                 <Nft />
                 <Cards />
                 <Tokonomics />

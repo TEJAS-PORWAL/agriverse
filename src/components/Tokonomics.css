@@ -68,14 +68,14 @@
 .toko--cards:hover{
     /* transform: rotate3d(1, 0, 0.3, 15deg); */
     box-shadow: 0px 0px 30px black;
-    animation: shake 0.8s ease;
-    
+    transform: scale(1.1);
+    /* animation: shake 0.8s ease; */
 
     /* will-change: transform; transition: all 400ms cubic-bezier(0.03, 0.98, 0.52, 0.99) 0s; transform: perspective(1000px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1); */
 }
 
 
-@keyframes shake {
+/* @keyframes shake {
     0%{
         transform: rotate3d(1, 1, 1, -20deg);
     }
@@ -83,4 +83,4 @@
         transform: rotate3d(1, 1, 1, 0deg);
 
     }
-}
+} */

@@ -9,7 +9,8 @@
 .card-container{
     /* border: 1px solid rebeccapurple ; */
     display: flex;
-    background-color: #023411;
+    /* background-color: #023411; */
+    background-image: url(../images/bg3.jpg);
     color: #fff;
     min-width: 360px ;
     justify-content: space-evenly;
@@ -60,14 +61,6 @@
     text-decoration: none !important;
     border: none !important;
 }
-
-
-
-
-
-
-
-
 
 
 .owl-dots{

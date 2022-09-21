@@ -10,12 +10,12 @@
   font-display: swap;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 .aboutlink {
   background-color: rgba(0, 0, 0, 0.861);
   color: #ffffff;
-  padding: 5px 20px 0 120px;
+  padding: 5px 20px 0 50px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -26,13 +26,14 @@
 .check{
   padding: 50px;
   margin-top: 50px;
-}
+  }
 
 .aboutlink div .type {
   font-size: 4rem;
   font-weight: bolder;
   /* border: 1px solid red; */
   font-family: 'Poppins', sans-serif;
+
 }
 
 .aboutlink h1 {
@@ -74,7 +75,9 @@
   padding: 0px;
   margin-top: 0;
   margin-bottom: 1rem;  
+  font-weight: 450;
   font-family: 'Poppins', sans-serif;
+  /* font-family: 'Open Sans', sans-serif; */
 }
 
 .aboutlink .alink div .us {
@@ -104,6 +107,10 @@
 
   .at h1{
   font-family: 'Inknut Antiqua', serif; 
+}
+
+.about--us{
+  padding-left: 50px !important;
 }
 
 

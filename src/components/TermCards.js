@@ -7,16 +7,16 @@ export default function TermCards() {
   return (
     <div className="cards--cont">
       <Link  className="termcards" to={"/cardsection"}>
-        <div className="terms--div">Long Term</div>
+        <div className="terms--div"></div>
       </Link>
       <Link className="termcards" to={"/cardsection"}>
-        <div className="terms--div">Mid Term</div>
+        <div className="terms--div"></div>
       </Link>
       <Link className="termcards" to={"/cardsection"}>
-        <div className="terms--div">Short Term</div>
+        <div className="terms--div"></div>
       </Link>
       <Link  className="termcards" to={"/cardsection"}>
-        <div className="terms--div">Livestock</div>
+        <div className="terms--div"></div>
       </Link>
     <Outlet/> 
     </div>
