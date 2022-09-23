@@ -1,5 +1,7 @@
 import React from 'react'
 import './Navbar.css'
+import WhitePaperPDF from '../../src/Whitepaper.pdf';
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
@@ -43,7 +45,7 @@ export default function Navbar(){
     }
 
     const navlinks_styles = {
-        left: Btn === 'active'? '-200px':'200px',
+        left: Btn === 'active'? '-260px':'200px',
     }
 
     const bg_styles = {
@@ -68,12 +70,31 @@ export default function Navbar(){
                 </div>
                 <div id="navbar--links" className='navbar--links'>
                     <ul className='navbar--links--list'>
+                    {/* <Link to="About" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('About')}>About</li>
+                    </Link> */}
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Products')}>Products</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Buy Token')}>Buy AV Tokens</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Application')}>Application</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E game</li>
+                    </Link>
+                    <Link to="Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E Game</li>
+                    </Link>
+                    <Link to="/Roadmap" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Roadmap')}>Roadmap</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('Team')}>Team/Vision</li>
+                    </Link>
+                    <Link to={WhitePaperPDF} target="_blank" style={{textDecoration:"none"}}>
+                        {/* <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li> */}
+                        <li style={navlinks_styles}>Whitepaper</li>
+                    </Link>
+                    {/* <Link to="/Vision" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Vision')}>Team/Vision</li>
+                    </Link> */}
                     </ul>
                 </div>
             </div>

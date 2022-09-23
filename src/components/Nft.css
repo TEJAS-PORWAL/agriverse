@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.nft {
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #fff;
+    padding: 30px 10%;
+    min-width: 420px;
+    width: 100%;
+
+}
+
+.nft h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 350%;
+}
+
+.nft p {
+    font-size: 1.2rem;
+    word-spacing: 4px;
+    text-align: justify;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 420;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+}
+
+@media only screen and (max-width: 710px) {
+    .nft {
+        padding: 30px 5%;
+    }
+}
+
+@media only screen and (max-width: 532px) {
+    .nft h1{
+        font-size: 250%;
+    }
+}
