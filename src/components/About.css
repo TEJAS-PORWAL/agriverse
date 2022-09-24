@@ -1,36 +1,47 @@
+:root {
+    --primary: #59ab07;
+    --primary2: #4d8a0f;
+    --default: white;
+    --primary3: #80ff00;
+}
 
-.about
-{
+.about {
     width: 100%;
-    background-color: black;
+    min-height: 100vh;
     font-size: 1.3rem;
-    min-width: 360px ;
-    padding: 5% ;
+    min-width: 420px;
+    padding: 55px;
     text-align: justify;
-    color: rgb(221, 221, 221);
+    background-image: url(../images/bg1.jpg);
+    background-position: center;
+    background-size: cover;
+    color: var(--default);
+    font-family: 'Open Sans', sans-serif;
 }
 
-.about .info
-{
-    font-weight:bolder;
+.about .info {
+    font-weight: bold;
     text-align: center;
-    font-family:'Times New Roman', Times, serif;
-    text-decoration-line:underline ;
-    margin-bottom: 30px ;
+    font-family: 'Poppins', sans-serif;
+    text-decoration-line: underline;
+    margin-bottom: 30px;
 }
 
-.about .info2
-{
-    font-family: 'Times New Roman', Times, serif; 
-    text-align: center;  
-   
-
+.about .info2 {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 35px;
+    text-align: justify;
 }
 
 
 
-@media only screen and (max-width: 710px){
-    .about{
+@media only screen and (max-width: 710px) {
+    .about {
         font-size: 1rem;
+        padding: 25px;
+    }
+    .about .info2 {
+        line-height: 25px;
+        font-weight: 500;
     }
 }

@@ -1,9 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
 
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     font-family: 'Poppins', sans-serif;
 }
+
 
 :root {
     --primary: #59ab07;
@@ -15,19 +25,22 @@
 footer {
     background-image: url("../images/foot-bg.jpg");
     width: 100%;
-    min-width: 360px;
+    min-width: 420px;
 }
 
 /* *********CONTACT US************** */
 .footer--contact{
     /* background-color: white; */
-    color: var(--primary);
+    /* color: var(--primary); */
     width: 90%;
     margin: 0 auto 50px auto;
 }
 
 .contact--title{
     text-align: center;
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 300%;
 }
 
 .contact--cards{
@@ -49,26 +62,35 @@ footer {
 }
 
 .contact--cards div img{
-    width: 200px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 50px;
     margin: 0 auto;
     text-align: center;
     border: none;
     outline: none;
+    /* transform: scale(0.6); */
 }
 
 .contact--cards div h2{
     text-align: center;
+    color: var(--primary);
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact--cards div a{
     text-decoration: none;
     color: var(--default);
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.2px;
     text-align: center;
 }
 
 .contact--cards div a:hover{
+    letter-spacing: 1px;
     color: var(--primary);
+}
+.contact--cards div a:hover h2{
+    color: var(--primary3);
 }
 /* ******TOP************ */
 .top {
@@ -82,6 +104,7 @@ footer {
 
 .top--title {
     color: var(--default);
+    font-family: 'Poppins', sans-serif;
     font-weight: 400;
     width: 30%;
     margin: 0 auto;
@@ -94,7 +117,8 @@ footer {
     border: 1px solid var(--primary);
     text-align: center;
     color: var(--default);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.2px;
     /* outline: none; */
     padding: 5px;
     background: transparent;
@@ -128,7 +152,9 @@ footer {
     border-radius: 4px;
     margin: 10px 0;
     font-size: 15px;
+    letter-spacing: 1px;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .top--btn:focus, .top--btn:active {
@@ -144,10 +170,6 @@ footer {
 /* *****************MIDDLE****************** */
 
 .mid {
-    /* display: grid; */
-    /* gap: 80px; */
-    /* grid-template: auto / repeat(2, 1fr); */
-    /* justify-content: space-around; */
     color: var(--default);
     padding: 20px 0;
     width: 100%;
@@ -157,20 +179,21 @@ footer {
 
 .mid .mid--left {
     margin: 0 auto;
-    /* border: 1px solid red; */
     text-align: center;
     width: 60%;
 }
 
 .form--title {
     color: var(--primary);
-    /* border: 1px solid red; */
-    font-weight: 400;
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 200%;
+    /* font-weight: 400; */
     text-align: center;
+    margin: 10px 0 14px 0;
 }
 
 .form--inputs{
-    /* border: 1px solid red; */
     display: grid;
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     gap: 10px;
@@ -180,11 +203,12 @@ footer {
     background-color: transparent;
     border: none;
     border: 1px solid var(--primary3);
-    /* border: 1px solid var(--default); */
     outline: none;
     height: 40px;
     color: var(--default);
     padding: 0 15px;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1px;
 }
 
 
@@ -196,19 +220,20 @@ footer {
     color: var(--default);
     background-color: var(--primary);
     outline: none;
-    padding: 5px 25px;
+    padding: 18px;
     border-radius: 4px;
     margin: 10px 0;
-    font-size: 13px;
+    font-size: 16px;
     cursor: pointer;
     margin: 20px auto;
+    font-family: 'Poppins', sans-serif !important;
+    letter-spacing: 1px;
 }
 
 .form--btn:hover {
     border: 1px solid #fff;
     background-color: transparent;
     color: var(--primary);
-    animation: btn 0.1s;
 }
 
 /* *****MIDDLE RIGHT PART******* */
@@ -226,6 +251,10 @@ footer {
     font-weight: 400;
     text-align: center;
     margin: 15px 0 0 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 350%;
 }
 
 .mid--right--links{
@@ -233,6 +262,7 @@ footer {
     margin: 15px auto;
     display: flex;
     justify-content: center;
+    /* border: 1px solid blue; */
 }
 
 .mid--right--links a{
@@ -266,6 +296,9 @@ footer {
     color: var(--default);
     text-decoration: none;
     transition: all 0.5s ease;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 1.1px;
+    font-size: 1.15rem;
 }
 
 .mid--right--emaill a:hover {
@@ -299,17 +332,26 @@ footer {
 
 /* *************BOTTOM****************** */
 .bottom {
-    border: 1px solid var(--primary);
-    border-left: none;
-    border-right: none;
-    border-bottom: 1px solid #013717;
+    border-top: 1px solid var(--primary);
     text-align: center;
     color: var(--default);
+    padding: 10px 0 15px;
+}
+
+.bottom p{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.8px;
 }
 
 .bottom a{
     color: var(--primary);
     text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.4px;
+}
+.bottom a:hover{
+    color: var(--primary3);
 }
 
 /* ******ANIMATIONS******* */
@@ -449,10 +491,9 @@ footer {
 }
 
 .btn {
-    width: 150px;
-    height: 40px;
-    border: 1px solid #333;
-    font-family: 'Cinzel', serif;
+    width: 80px;
+    height: 30px;
+    /* font-size: 1.1rem; */
     cursor: pointer;
     -webkit-tap-highlight-color: transparent;
     display: flex;
@@ -460,7 +501,7 @@ footer {
     justify-content: center;
     position: relative;
     z-index: 0;
-    transition: 1s;
+    transition: 0.8s;
 }
 
 .btn::before,

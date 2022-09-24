@@ -1,5 +1,9 @@
 import React from 'react'
 import './Navbar.css'
+import WhitePaperPDF from '../../src/Whitepaper.pdf';
+import Logo from '../images/logoo.png';
+import Menu from '../images/Menu.png';
+import { Link } from "react-router-dom";
 
 export default function Navbar(){
 
@@ -8,8 +12,10 @@ export default function Navbar(){
     const [pos,setpos] = React.useState('fixed')
     const [front,setfront] = React.useState(9998);
     const [dis,setdis] = React.useState("block")
+    const [opa,setopa] = React.useState("none");
     function nav_btn_click(){
         let navbar_links = document.getElementById('navbar--links').style;
+        let logo = document.getElementById('logo').style;
         if(dis==="none"){
             setTimeout(()=>{
                 navbar_links.display = dis;
@@ -23,6 +29,7 @@ export default function Navbar(){
             setBtn((btn)=>btn===''?'active':'');
             nav_ground.animation = ani;
             nav_ground.position = pos;
+            logo.display = opa;
             if(front===-1){
                 setTimeout(() => {
                     nav_ground.zIndex = front;
@@ -35,6 +42,7 @@ export default function Navbar(){
             setani((ani)=>ani==='unroll 0.8s ease 0s 1'?'roll 0.8s ease 0s 1':'unroll 0.8s ease 0s 1');
             setpos((pos)=>pos==='fixed'?'absolute':'fixed');
             setdis((dis)=>dis==="block"?"none":"block");
+            setopa((opa)=>opa==="none"?"block":"none");
             setTimeout(() => {
                 nav_ground.animation = "none";
             }, 2000);
@@ -43,7 +51,7 @@ export default function Navbar(){
     }
 
     const navlinks_styles = {
-        left: Btn === 'active'? '-200px':'200px',
+        left: Btn === 'active'? '-260px':'200px',
     }
 
     const bg_styles = {
@@ -51,7 +59,7 @@ export default function Navbar(){
     }
 
     function setPage(m){
-        console.log(m)
+        nav_btn_click();
     }
     
     return (
@@ -60,20 +68,49 @@ export default function Navbar(){
         <nav className='nav'>
             <div className='bg' style={bg_styles}></div>
             <div className='navbar'>
+                <div className='logo' id="logo">
+                <Link to="/" style={{textDecoration:"none"}} onClick={()=>{
+                    window.scrollTo(0,0);
+                }}>
+                    <img src={Logo} className="logo--img"/>
+                </Link>
+                </div>
                 <div className={`navbar--btn ${Btn}`} onClick={nav_btn_click}>
+                    {/* <span className='span'></span>
                     <span className='span'></span>
                     <span className='span'></span>
-                    <span className='span'></span>
-                    <span className='span'></span>
+                    <span className='span'></span> */}
+                    <img src={Menu} width="120px"/>
                 </div>
                 <div id="navbar--links" className='navbar--links'>
                     <ul className='navbar--links--list'>
+                    {/* <Link to="About" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('About')}>About</li>
+                    </Link> */}
+                    <Link to="/Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} 
+                        onClick={()=>setPage('Products')}
+                        >Products</li>
+                    </Link>
+                    <Link to="/Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Buy Token')}>Buy AV Tokens</li>
+                    </Link>
+                    <Link to="/Comingsoon" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Application')}>Application</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E game</li>
+                    </Link>
+                    <Link to="/Comingsoon" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('P2E')}>P2E Game</li>
+                    </Link>
+                    <Link to="/Roadmap" style={{textDecoration:"none"}}>
                         <li style={navlinks_styles} onClick={()=>setPage('Roadmap')}>Roadmap</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li>
-                        <li style={navlinks_styles} onClick={()=>setPage('Team')}>Team/Vision</li>
+                    </Link>
+                    <Link to={WhitePaperPDF} target="_blank" style={{textDecoration:"none"}}>
+                        {/* <li style={navlinks_styles} onClick={()=>setPage('Whitepaper')}>Whitepaper</li> */}
+                        <li style={navlinks_styles}>Whitepaper</li>
+                    </Link>
+                    {/* <Link to="/Vision" style={{textDecoration:"none"}}>
+                        <li style={navlinks_styles} onClick={()=>setPage('Vision')}>Team/Vision</li>
+                    </Link> */}
                     </ul>
                 </div>
             </div>
