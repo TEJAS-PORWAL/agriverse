@@ -1,0 +1,77 @@
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --primary: #59ab07;
+    --primary2: #4d8a0f;
+    --default: white;
+    --primary3: #80ff00;
+}
+
+.toko--cont{
+    text-align: center;
+    border-top:1px solid #80ff00 ;
+    padding: 20px;
+    background-image: url(../images/bg4.jpg);
+    background-position: center;
+    background-size: cover;
+    min-width: 420px;
+}
+
+.toko--cont .toko--heading{
+    /* border: 1px solid red; */
+    color: var(--default);
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 350%;
+}
+
+.toko{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 80px; */
+    flex-wrap: wrap;
+    /* min-width: 360px; */
+}
+
+.toko--cards{
+    max-width: 550px;
+    max-height: 550px;
+    margin: 15px auto;
+    border-radius: 10px;
+    /* background-color: var(--primary2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* cursor: pointer; */
+    border-radius: 10px;
+    overflow: hidden;
+    -moz-box-shadow: 0 0 5px #fff;
+    -webkit-box-shadow: 0 0 5px #fff;
+    box-shadow: 0px 0px 30px black;
+}
+
+
+.toko--cards img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+.toko--cards:hover{
+    box-shadow: 0px 0px 20px rgb(160, 234, 160);
+}
+
+@media only screen and (max-width: 532px) {
+    .toko--cont .toko--heading{
+        font-size: 300%;
+    }
+}
