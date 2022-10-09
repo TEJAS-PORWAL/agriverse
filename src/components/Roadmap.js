@@ -4,8 +4,8 @@ import ErrorBoundary from "./ErrorBoundary";
 
 export default function Roadmap() {
   setTimeout(() => {
-    let left_btn = document.getElementById("left-btn");
-    let right_btn = document.getElementById("right-btn");
+    let left_btn = document.getElementById("left-btning");
+    let right_btn = document.getElementById("right-btning");
     let wrap = document.getElementById("wrap");
     left_btn.onclick = () => {
       wrap.scrollLeft -= wrap.clientWidth;
@@ -109,220 +109,315 @@ export default function Roadmap() {
         };
       };
     };
+
   }, 10);
-  
-  const scrolly = ()=>{ 
-    setTimeout(()=>{
-      window.scrollTo(0,1720);
-    },1000)
+
+  const scrolly = () => {
+    setTimeout(() => {
+      let i = document.getElementById("roadmap").offsetTop;
+      window.scrollTo(0, i);
+    }, 1000)
   }
+
+  // let visible = '2022Q1';
+  // setTimeout(() => {
+  //   let vi = document.getElementById(visible).style;
+  //   vi.width = "max-content";
+  //   vi.backgroundColor = 'rgba(0, 0, 0, 0.274)';
+  //   vi.color = '#fff';
+  //   vi.flexDirection = 'row';
+  // }, 5);
+  
+  // function visiblehandler(new_visible) {
+  //   setTimeout(() => {
+  //     let vs = document.getElementById(visible).style;
+  //     let en = document.getElementById(new_visible);
+  //     let nv = en.style;
+  //     visible = new_visible;
+  //     en.onmouseenter = () => {
+  //       nv.width = "max-content";
+  //       nv.backgroundColor = 'rgba(0, 0, 0, 0.274)';
+  //       nv.color = '#fff';
+  //       nv.flexDirection = 'row';
+  //       vs.width = 'min-content';
+  //       vs.backgroundColor = 'transparent';
+  //       vs.color = 'transparent';
+  //       vs.flexDirection = "column-reverse";
+  //     }
+  //     en.onmouseout = () => {
+  //       vs = document.getElementById(visible).style;
+  //       nv = document.getElementById('2022Q1').style;
+  //       nv.width = "max-content";
+  //       nv.backgroundColor = 'rgba(0, 0, 0, 0.274)';
+  //       nv.color = '#fff';
+  //       nv.flexDirection = 'row';
+  //       vs.width = 'min-content';
+  //       vs.backgroundColor = 'transparent';
+  //       vs.color = 'transparent';
+  //       vs.flexDirection = "column-reverse";
+  //     }
+  //   }, 1)
+  // }
+ 
   return (
     <ErrorBoundary>
-      <div id ="roadmap" className="roadmap">
+      <div id="roadmap" className="roadmap">
+        <h1>ROADMAP</h1>
         <h3>WE HAVE BIG PLANS FOR THE FUTURE OF REQUEST</h3>
-        <h1>Roadmap</h1>
         <div className="roadmap-nav">
-          <a id="anch-1" href="#2022" 
-          onClick={scrolly}
+          <a id="anch-1" href="#2022"
+            onClick={scrolly}
           >
             2022
           </a>
-          <a id="anch-2" href="#2023" 
-          onClick={scrolly}
+          <a id="anch-2" href="#2023"
+            onClick={scrolly}
           >
             2023
           </a>
-          <a id="anch-3" href="#2024" 
-          onClick={scrolly}
+          <a id="anch-3" href="#2024"
+            onClick={scrolly}
           >
             2024
           </a>
         </div>
         <div className="btn-div">
-        <div className="wrapper" id="wrap">
-          <div id="2022" className="wrap-item">
-            <div className="div-box">
-              <div className="card-box">
-                <span style={{ opacity: 1 }}></span>
-                <div>
-                  <h2>Q1</h2>
-                  <ul>
-                    <li>
-                    Planning and Building a professional team 
-                    </li>
-                    <li>Identity of core problems</li>
-                    <li>industry research </li>
-                  </ul>
+          <div className="wrapper" id="wrap">
+            <div id="2022" className="wrap-item">
+              <div className="div-boxing">
+                <div className="card-boxses" id="2022Q1" 
+                // onMouseEnter={visiblehandler('2022Q1')}
+                // onMouseLeave={invisiblehandler('2022Q1')}
+                >
+                  <span style={{ opacity: 1 }} ></span>
+                  <div>
+                    <h2>Q1</h2>
+                    <ul>
+                      <li>
+                        Planning and Building a professional team
+                      </li>
+                      <li>Identity of core problems</li>
+                      <li>industry research </li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q2</h2>
-                  <ul>
-                    <li>Market research </li>
-                    <li>Product finalization</li>
-                    <li>Development planning</li>
-                    <li>Budget and financial planning</li>
-                  </ul>
+                <div className="card-boxses" id="2022Q2" 
+                // onMouseEnter={visiblehandler('2022Q2')}
+                // onMouseLeave={invisiblehandler('2022Q2')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q2</h2>
+                    <ul>
+                      <li>Market research </li>
+                      <li>Product finalization</li>
+                      <li>Development planning</li>
+                      <li>Budget and financial planning</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q3</h2>
-                  <ul>
-                    <li>Process Planning and case Study of Phase1 crops  </li>
-                    <li>Planning of land and soil tests of respected farms for phase1 crops</li>
-                    <li>Blockchain process and planning </li>
-                    <li>Whitepaper and Applications Planning </li>
-                    <li>Metaverse Planning</li>
-                    <li>Partnerships Planning</li>
-                    <li>Marketing Planning</li>
-                  </ul>
+                <div className="card-boxses" id="2022Q3"
+                //  onMouseEnter={visiblehandler('2022Q3')}
+                // onMouseLeave={invisiblehandler('2022Q3')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q3</h2>
+                    <ul>
+                      <li>Process Planning and case Study of Phase1 crops  </li>
+                      <li>Planning of land and soil tests of respected farms for phase1 crops</li>
+                      <li>Blockchain process and planning </li>
+                      <li>Whitepaper and Applications Planning </li>
+                      <li>Metaverse Planning</li>
+                      <li>Partnerships Planning</li>
+                      <li>Marketing Planning</li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q4</h2>
-                  <ul>
-                    <li>WhitePaper Release</li>
-                    <li>Website Launch</li>
-                    <li>Contract Creation</li>
-                    <li>Listing on CMC and Goingecko</li>
-                    <li>Partnership with some good launchpads</li>
-                    <li>Conducting Presale and IDO</li>
-                    <li>Purshasing land in land</li>
-                    <li>The Agriverse Web app release</li>
-                    <li>The Agriverse android app beta release</li>
-                  </ul>
+                <div className="card-boxses" id="2022Q4" 
+                // onMouseEnter={visiblehandler('2022Q4')}
+                // onMouseLeave={invisiblehandler('2022Q4')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q4</h2>
+                    <ul>
+                      <li>WhitePaper Release</li>
+                      <li>Website Launch and Contract Creation</li>
+                      <li>Listing on CMC and Goingecko</li>
+                      <li>Partnership with some good launchpads</li>
+                      <li>Conducting Presale and IDO</li>
+                      <li>Purshasing land in land</li>
+                      <li>The Agriverse Web app release. The Agriverse android app beta release</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div id="2023" className="wrap-item">
-            <div className="div-box">
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q1</h2>
-                  <ul>
-                    <li>
-                    Introducing 7-10 long-term, mid term and short term crops</li>
-                    <li>Intensive expansion and leasing with farmers </li>
-                    <li>NFT marketplace launch</li>
-                    <li>Release of second batch of  NF's</li>
-                    <li>The Agriverse iOS app beta release</li>
-                    <li>Complete app Launch (android and iOS)</li>
-                    <li>Multi Chain Token integration</li>
-                  </ul>
+            <div id="2023" className="wrap-item">
+              <div className="div-boxing">
+                <div className="card-boxses" id="2023Q1" 
+                // onMouseEnter={visiblehandler('2023Q1')}
+                // onMouseLeave={invisiblehandler('2023Q1')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q1</h2>
+                    <ul>
+                      <li>Introducing 7-10 long-term, mid term and short term crops</li>
+                      <li>Intensive expansion and leasing with farmers </li>
+                      <li>NFT marketplace launch</li>
+                      <li>Release of second batch of  NF's</li>
+                      <li>The Agriverse iOS app beta release</li>
+                      <li>Complete app Launch (android and iOS)</li>
+                      <li>Multi Chain Token integration</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="card-boxses" id="2023Q2" 
+                // onMouseEnter={visiblehandler('2023Q2')}
+                // onMouseLeave={invisiblehandler('2023Q2')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q2</h2>
+                    <ul>
+                      <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                      <li>create brand name in India</li>
+                      <li>Executing exporting Marketing plan</li>
+                      <li>Introducing livestock's in TheAgriverse ecosystem</li>
+                      <li>Partnership with some well known institutions/organizations.</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="card-boxses" id="2023Q3" 
+                // onMouseEnter={visiblehandler('2023Q3')}
+                // onMouseLeave={invisiblehandler('2023Q3')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q3</h2>
+                    <ul>
+                      <li> Creating Brand and expanding all over the brand Name of Agriverse</li>
+                      <li>Starting a mass #GoGreen initiative</li>
+                      <li>Starting a mass #GoGreen initiative</li>
+                      <li>Executing Marketing plan II</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="card-boxses" id="2023Q4" 
+                // onMouseEnter={visiblehandler('2023Q4')}
+                // onMouseLeave={invisiblehandler('2023Q4')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q4</h2>
+                    <ul className="hidden">
+                      <li> <strong>COMMING SOON</strong> </li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      {/* <li>create brand name in India</li>
+                    <li>Executing exporting Marketing plan</li>
+                    <li>Introducing livestock's in TheAgriverse ecosystem</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                    </ul>
+                  </div>
                 </div>
               </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q2</h2>
-                  <ul>
-                    <li> Introducing more crops in TheAgriverse ecosystem.</li>
+            </div>
+            <div id="2024" className="wrap-item">
+              <div className="div-boxing">
+                <div className="card-boxses" id="2024Q1" 
+                // onMouseEnter={visiblehandler('2024Q1')}
+                // onMouseLeave={invisiblehandler('2024Q1')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q1</h2>
+                    <ul className="hidden">
+                      {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
                     <li>create brand name in India</li>
                     <li>Executing exporting Marketing plan</li>
                     <li>Introducing livestock's in TheAgriverse ecosystem</li>
-                    <li>Partnership with some well known institutions/organizations.</li>
-                  </ul>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q3</h2>
-                  <ul>
-                    <li> Creating Brand and expanding all over the brand Name of Agriverse</li>
-                    <li>Starting a mass #GoGreen initiative</li>
-                    <li>Starting a mass #GoGreen initiative</li>
-                    <li>Executing Marketing plan II</li>
-                  </ul>
+                <div className="card-boxses" id="2024Q2" 
+                // onMouseEnter={visiblehandler('2024Q2')}
+                // onMouseLeave={invisiblehandler('2024Q2')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q2</h2>
+                    <ul className="hidden">
+                      {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    <li>create brand name in India</li>
+                    <li>Executing exporting Marketing plan</li>
+                    <li>Introducing livestock's in TheAgriverse ecosystem</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q4</h2>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
+                <div className="card-boxses" id="2024Q3" 
+                // onMouseEnter={visiblehandler('2024Q3')}
+                // onMouseLeave={invisiblehandler('2024Q3')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q3</h2>
+                    <ul className="hidden">
+                      {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    <li>create brand name in India</li>
+                    <li>Executing exporting Marketing plan</li>
+                    <li>Introducing livestock's in TheAgriverse ecosystem</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div id="2024" className="wrap-item">
-            <div className="div-box">
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q1</h2>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q2</h2>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q3</h2>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
-                </div>
-              </div>
-              <div className="card-box">
-                <span></span>
-                <div>
-                  <h2>Q4</h2>
-                  <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                  </ul>
+                <div className="card-boxses" id="2024Q4" 
+                // onMouseEnter={visiblehandler('2024Q4')}
+                // onMouseLeave={invisiblehandler('2024Q4')}
+                >
+                  <span></span>
+                  <div>
+                    <h2>Q4</h2>
+                    <ul className="hidden">
+                      {/* <li> Introducing more crops in TheAgriverse ecosystem.</li>
+                    <li>create brand name in India</li>
+                    <li>Executing exporting Marketing plan</li>
+                    <li>Introducing livestock's in TheAgriverse ecosystem</li>
+                    <li>Partnership with some well known institutions/organizations.</li> */}
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                      <li><strong>COMING SOON</strong></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
-        <p id="scale"></p>
-        <button id="left-btn" className="scroll-btn">
-          &lt;
-        </button>
-        <button id="right-btn" className="scroll-btn">
-          &gt;
-        </button>
+          <p id="scale"></p>
+          <button id="left-btning" className="scroll-btn">
+            &lt;
+          </button>
+          <button id="right-btning" className="scroll-btn">
+            &gt;
+          </button>
         </div>
       </div>
     </ErrorBoundary>

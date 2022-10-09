@@ -1,42 +1,117 @@
-.cards--cont{
+.cards--cont {
+    
+    width: 100%;
+    /* background: url("../images/hero-bg-v2.jpg"); */
+    background: url("../images/bg-new4.jpg");
+    background-color: rgba(0, 0, 0, 0.861);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;
+    min-width: 420px;
+}
+
+.cards--cont {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.carosal{
     display: flex;
     justify-content: center;
-    width: 100%;
-    margin: 0 auto;
     padding: 20px;
     padding-top: 50px;
     padding-bottom: 150px;
     gap: 20px;
-    background: url("../images/termcards.jpg");
-    background-size: contain;
+    flex-wrap: wrap;
+    /* border: 1px solid red; */
 }
 
-.cards--cont{
-    text-decoration: none;
-    color: black;
-    font-size: 1.3rem;;
+.terms--div{
+    color: rgb(0, 238, 255) !important;
+    text-shadow: 1px 0px #ffffff;
 }
 
-.termcards{
-    width: 250px;
-    height: 400px;
+.termcards {
+    min-width: 270px;
+    min-height: 350px;
     display: flex;
+    margin: 30px auto;
     align-items: center;
     justify-content: center;
-    /* margin: 0 auto; */
-    background-color: rgba(255, 255, 255, 0.721);
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     cursor: pointer;
     transition: 0.1s;
-    text-decoration: none!important;
-    color: black;
-}
-.termcards:nth-child(1),
-.termcards:nth-child(3){
+    text-decoration: none !important;
     position: relative;
-    top: 80px;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 2px #000000;
 }
 
-.termcards:hover{
-    box-shadow: 0px 0px 10px 5px #54ff00;
+.termcards:hover {
+    box-shadow: 0px 0px 20px 5px var(--default);
+    transform: scale(1.2);
+}
+
+.termcards:nth-child(2),
+.termcards:nth-child(4) {
+    top: 35px;
+}
+
+.termcards:nth-child(1) {
+    background-image: url(../images/longterm/01.jpg);
+    background-size: cover;
+}
+
+.termcards:nth-child(2) {
+    background-image: url(../images/Midterm/03.jpg);
+    background-size: cover;
+}
+
+.termcards:nth-child(3) {
+    background-image: url(../images/Shortterm/01.jpg);
+    background-size: cover;
+}
+
+.termcards:nth-child(4) {
+    background-image: url(../images/Livestock/Cow.jpg);
+    background-size: cover;
+}
+
+.termcards .terms--div{
+    color: var(--default);
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+}
+.termcards:hover .terms--div{
+    font-size: 25px;
+    bottom: 14px;
+}
+
+@media only screen and (max-width: 875px){
+    .termcards:nth-child(2),
+.termcards:nth-child(4) {
+    top: 0px;
+}
+}
+@media only screen and (max-width: 601px){
+    .cards--cont{
+        scroll-behavior: smooth;
+        overflow-x: auto;
+    }
+    .carosal{
+        width:max-content;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        justify-content: space-between;
+    }
+    .termcards{
+        scroll-snap-align:center;
+        scroll-snap-stop: always;
+        margin: 0 10px;
+    }
 }

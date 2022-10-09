@@ -1,17 +1,33 @@
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    /* font-style: normal; */
+    /* font-display: swap; */
+}
 
+.Populate h1{
+    text-align: center ;
+    color: #ffffff;
+    font-family: 'Digitone';
+    font-weight: bolder;
+    font-size: 350%;
+}
 
 .Populate{
     /* border: 1px solid red; */
     display: flex;
     width: 100%;
-    min-width: 360px ;
+    min-width: 420px;
     justify-content: center;
     flex-direction: column;
-    background: url('../images/BG-roadmap.png');
+    /* background: rgba(58, 134, 0, 0.861); */
+    /* background: rgba(0, 0, 0, 0.861); */
+    background: url("../images/BG-roadmap.png");
     background-size: auto;
     background-repeat: no-repeat;
     padding: 15px;
-    display: none;
 }
 
 .Populate .Populatediv-container {
@@ -28,6 +44,7 @@
     scroll-behavior: smooth;
     background-color: inherit;
     scroll-snap-type: x mandatory;
+    background-color: transparent;
 
 }
 
@@ -45,7 +62,7 @@
     font-size: 85%;
     color: aliceblue;
     border-radius: 10px;
-    background-color: rgba(0, 0, 0, 0.423);
+    background-color: rgba(0, 0, 0, 0.557);
     block-size: 300px;
     scroll-snap-align: center;
     scroll-snap-stop: always;
@@ -68,7 +85,7 @@
 }
 
 .scroll-btn {
-    background-color:#4d8a0f;
+    background-color:rgba(0, 0, 0, 0.557);
     color: #80ff00;
     padding: 5px 10px;
     border-radius: 5px;
@@ -77,3 +94,13 @@
     margin: 0 10px;
 }
 
+@media only screen and (max-width: 2500px){
+    .Populate{
+        display:none;
+    }
+}
+@media only screen and (max-width: 700px){
+    .Populate{
+        display:flex;
+    }
+}

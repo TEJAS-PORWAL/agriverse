@@ -1,0 +1,280 @@
+:root {
+  --primary: #59ab07;
+  --primary2: #4d8a0f;
+  --default: white;
+  --primary3: #80ff00;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+@font-face {
+  font-family: 'Digitone';
+  src: url('DigitoneRegular.woff2') format('woff2'),
+    url('DigitoneRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.aboutlink {
+  background-color: rgba(0, 0, 0, 0.861);
+  color: #ffffff;
+  padding: 30px 20px 30px 50px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  /* border: 1px solid greenyellow; */
+  min-width: 420px;
+}
+
+.check {
+  padding: 50px;
+  margin-top: 50px;
+  letter-spacing: 1px;
+}
+
+.aboutlink div .type {
+  font-size: 4rem;
+  font-weight: bolder;
+  
+}
+
+.Typewriter__wrapper{
+  font-family: 'Digitone'!important;
+  padding-left: 10px;
+}
+
+.aboutlink h1 {
+  display: block;
+  font-size: 4rem;
+  margin-left: 100px;
+}
+
+.aboutlink .alink {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#agritext {
+  font-family: 'Digitone';
+  font-weight: bold;
+}
+
+.aboutlink .alink div {
+  display: flex;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.aboutlink .alink div h1 {
+  margin: -80px 42px 30px 28px;
+  padding: 10px 50px;
+}
+
+.aboutlink .alink .about--us {
+  /* border: 1px solid ; */
+  font-size: 1.2rem;
+  margin-top: 0;
+  padding: 0 10px!important;
+  margin-bottom: 1rem;
+  font-weight: 450;
+  font-family: 'Poppins', sans-serif;
+  text-align: justify;
+  /* background-color: yellow; */
+}
+
+.about--us{
+  /* justify-content: space-evenly; */
+  /* word-break: break-all; */
+  /* padding: 30px 10%; */
+  word-wrap: break-word;
+  word-break: keep-all;
+  /* word-spacing: 1px;  */
+}
+
+.aboutlink .alink div .us {
+  margin: -30px 5px 0;
+  padding: 0;
+  font-family: 'Inknut Antiqua', serif;
+
+}
+
+/* .aboutlink .alink span {
+  font-size: small;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: var(--primary);
+  cursor: pointer;
+  font-weight: bolder;
+  transition: all 0.3s ease;
+  margin-left: 65px;
+  margin-right: 10px;
+  font-size: 1.05rem;
+} */
+
+.modal-content{
+  min-width: 405px;
+  margin-top: 60px;
+  background-color: var(--primary2);
+  color: var(--default);
+}
+
+.about--us--btn{
+  width: auto;
+  padding: 0px 20px;
+  height: 50px;
+  background-color: var(--primary) !important;
+  color: var(--default) !important;
+  font-size: 1.1rem;
+  font-weight: 800;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+}
+
+
+.aboutlink .alink .about--us--btn:hover {
+  /* border: 2px solid #035500; */
+  background-color:  rgba(0, 255, 13, 0.64);
+  /* color: #035500; */
+  text-shadow: 0 0 10px #fff;
+}
+
+.about--us--btn :active{
+  transform: translateY(4px); 
+}
+
+.at h1 {
+  font-family: 'Poppins', sans-serif;
+}
+
+.about--us {
+  padding-left: 50px !important;
+}
+
+
+@media only screen and (max-width: 1201px) {
+  #tree {
+    margin-left: 140px;
+    /* border: 1px solid brown; */
+  }
+
+  .aboutlink>div {
+    width: 100%;
+  }
+
+  .aboutlink div {
+    display: inline-block;
+    /* border: 1px solid rebeccapurple; */
+  }
+
+  .aboutlink div .type {
+    display: inline-block;
+  }
+
+  #agritext {
+    margin-left: 10px;
+  }
+  .aboutlink .alink div .us {
+    margin-top: -57px;
+    margin-left: 70%;
+  }
+}
+
+@media only screen and (max-width: 953px) {
+  .aboutlink .alink div {
+    width: 80%;
+  }
+
+  #tree {
+    width: 450px;
+    margin-left: 0px;
+  }
+}
+
+@media only screen and (max-width: 883px) {
+  /* .aboutlink {
+    padding: 5px 0px 0 100px;
+  } */
+
+  .aboutlink div .type,
+  .aboutlink h1 {
+    font-size: 3rem;
+  }
+
+  .aboutlink .alink h1 {
+    font-size: 4rem;
+  }
+}
+
+@media only screen and (max-width: 633px) {
+  .aboutlink {
+    padding: 0 0px 0 80px;
+  }
+
+  .aboutlink div .type,
+  .aboutlink h1 {
+    font-size: 2rem;
+  }
+
+  .aboutlink .alink h1 {
+    font-size: 4rem;
+  }
+  .aboutlink .alink div .us {
+    margin-left: 80%;
+  }
+}
+
+@media only screen and (max-width: 596px) {
+  .aboutlink .alink div .us {
+    margin-left: 90%;
+  }
+}
+
+@media only screen and (max-width: 553px) {
+  .aboutlink {
+    padding: 0 0px 50px 10px;
+  }
+
+  .aboutlink .alink div {
+    width: 100%;
+  }
+
+  #tree {
+    width: 300px;
+    margin-left: 50px;
+    padding: 0;
+  }
+
+  .aboutlink .alink div h1 {
+    padding: 10px 0px 0 50px;
+  }
+}
+
+@media only screen and (max-width: 422px) {
+  .aboutlink .alink div .us {
+    margin-left: 80%;
+    margin-top: -50px;
+  }
+
+  .aboutlink div .type,
+  .aboutlink h1 {
+    font-size: 1.8rem;
+  }
+
+  .aboutlink .alink h1 {
+    font-size: 4rem;
+  }
+  .aboutlink .alink span {
+    margin: 0 auto;
+  }
+}

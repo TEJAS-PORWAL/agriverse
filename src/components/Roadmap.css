@@ -1,13 +1,24 @@
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 .roadmap {
     width: 100%;
     height: 100%;
-    min-width: 360px;
+    min-width: 420px;
     overflow:hidden;
     scroll-behavior: smooth;
     background: url("../images/BG-roadmap.png");
     background-repeat: no-repeat;
-    background-size: covernm start;
-    padding: 30px 30px ;
+    background-size: cover;
+    background-position: center;
+    padding: 30px 30px ; 
+    
 }
 
 .roadmap  h3,
@@ -15,16 +26,20 @@
     margin: 0 auto;
     color: #fff;
     width: max-content;
-    /* position: absolute; */
+    font-family: 'Poppins', sans-serif;
 }
 .roadmap  h3{
     top: 10%;
     left: 32%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .roadmap  h1{
     top: 15%;
     left: 42% ;
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 350%;
 }
 
 .roadmap .roadmap-nav {
@@ -48,13 +63,12 @@
     color: rgb(99, 165, 0);
     text-decoration: none;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
 }
 
 .roadmap .roadmap-nav a:hover {
     color: #fff;
 }
-
-
 
 .roadmap .btn-div{
     display: flex;
@@ -66,7 +80,6 @@
 }
 
 .roadmap .wrapper {
-    /* border: 1px solid yellow; */
     width: 100%;
     height: 80%;
     display: flex;
@@ -83,11 +96,9 @@
 }
 
 .roadmap .wrapper .wrap-item {
-    /* border: 1px solid blue; */
     min-width: 100%;
     height: 100%;
     color: #fff;
-    /* opacity: 0.2; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -96,7 +107,7 @@
     scroll-snap-destination: center;
 }
 
-.roadmap .wrapper .wrap-item .div-box {
+.roadmap .wrapper .wrap-item .div-boxing {
     width: 100%;
     height: 100%;
     /* background-color: rgba(255, 255, 255, 0.582); */
@@ -105,7 +116,7 @@
     align-items: flex-end;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses{
     /* border: 1px solid rebeccapurple; */
     min-width: 200px;
     min-height: 200px;
@@ -114,24 +125,33 @@
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    background-color: transparent;
-    color: transparent;
-    flex-direction: column-reverse;
     transition: all 0.3s ease;
     border-radius: 14px;
     padding: 0 0 10px;
     cursor: pointer;
     z-index: 9;
+    width: min-content;
+    background-color: transparent;
+    color: transparent;
+    flex-direction: column-reverse;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box:hover{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses:nth-child(1){
     width: max-content;
     background-color: rgba(0, 0, 0, 0.274);
     color: #fff;
     flex-direction: row;
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box span{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses:hover{
+    width: max-content;
+    background-color: rgba(0, 0, 0, 0.274);
+    color: #fff;
+    flex-direction: row;
+}
+
+
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses span{
     min-width: 15px;
     min-height: 15px;
     border-radius: 100%;
@@ -139,7 +159,7 @@
     background-color: #fff;
     z-index: 99;
 }
-.roadmap .wrapper .wrap-item .div-box .card-box div{
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses div{
     /* border: 1px solid red; */
     width: 100%;
     height: 100%;
@@ -152,18 +172,35 @@
 }
 
 
-.roadmap .wrapper .wrap-item .div-box .card-box div h2 {
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses div h2 {
     width: max-content;
     position: relative;
-    left: 7px;
+    left: 10px;
+    padding: 10px;
+    font-family: 'Poppins', sans-serif;
+
 }
 
-.roadmap .wrapper .wrap-item .div-box .card-box ul {
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses ul {
     /* background-color: #fff; */
     position: relative;
     bottom: 15px;
     padding: 0px 30px;
     text-align: left;
+}
+
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses ul li{
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.7px;
+    line-height: 30px;
+}
+
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses .hidden li{
+    opacity: 0;
+}
+
+.roadmap .wrapper .wrap-item .div-boxing .card-boxses .hidden li:nth-child(1){
+    opacity: 1;
 }
 
 .roadmap .scroll-btn {
@@ -178,11 +215,11 @@
     z-index: 99;
 }
 
-#right-btn {
+#right-btning {
     left:90%;
 }
 
-#left-btn {
+#left-btning {
     left: 3%;
 }
 
@@ -206,3 +243,10 @@
 #div-3 {
     background-color: rgb(0, 162, 255);
 } */
+
+
+@media only screen and (max-width: 700px){
+    .roadmap{
+        display: none;
+    }
+}
