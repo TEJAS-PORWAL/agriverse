@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Open+Sans&display=swap');
+
+@font-face {
+    font-family: 'Digitone';
+    src: url('DigitoneRegular.woff2') format('woff2'),
+        url('DigitoneRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+.nft {
+    background-color: rgba(0, 0, 0, 0.897);
+    color: #fff;
+    padding: 30px 6%;
+    min-width: 420px;
+    width: 100%;
+    word-wrap: break-word;
+    word-break: keep-all;
+    word-spacing: 2px;
+}
+
+.nft h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: 'Digitone';
+    font-weight: bold;
+    font-size: 350%;
+    border-bottom:1px solid;
+}
+
+.nft p {
+    font-size: 1.2rem;
+    /* word-spacing: 2px; */
+    text-align: justify;
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    font-weight: 350;
+    /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif */
+}
+
+.nft--body{
+    display: grid;
+    /* border: 1px solid red; */
+    grid-template: 1fr / 2fr 1fr;
+    /* grid-template: 4fr/1fr 1fr; */
+    gap: 15px;
+}
+
+
+.nft--img--cont{
+    margin: auto;
+    border-radius: 4px;
+    overflow: hidden;
+    width: 80%;
+}
+.nft--img--cont img{
+    width: 100%;
+    /* margin-bottom: 40px; */
+    /* height: 100%; */
+    /* opacity: 80%; */
+    border-radius: 20%;
+    border: 2px solid lightblue;
+    /* padding: 1px; */
+    /* box-shadow: 10px 10px 5px lightblue; */
+}
+
+@media only screen and (max-width: 800px) {
+    .nft--body{
+        grid-template: 1fr / 1fr;
+    }
+    .nft--img--cont{
+        display: none;
+    }
+}
+@media only screen and (max-width: 710px) {
+    .nft {
+        padding: 30px 5%;
+        word-wrap: break-word;
+    }
+
+    .nft p{
+        /* padding: 1px 5%; */
+        /* line-break: break-word; */
+        display:grid;
+        justify-content: stretch;
+        text-align: left;
+        padding: 0px 8px 0px 10px  ; 
+
+        /* word-break: break-word  ;
+        white-space: wrap;
+        word-wrap: keep-all  ;
+        text-align: left right center; */
+        
+        /* word-spacing: 2px !important; */
+    }
+
+    /* .nft h1{
+        word-wrap: break-word;
+        word-break: break-all;
+    } */
+    .nft p:nth-child(3){
+        /* word-spacing: -1px !important; */
+    }
+}
+
+@media only screen and (max-width: 532px) {
+    .nft h1{
+        font-size: 250%;
+        /* justify-content: space-evenly;  */
+        /* word-break: break-all;
+        word-wrap: break-word; */
+    }
+}
+
+/* write the respnsiveness for the 1920*1080 device to set the image and the paragrapgh */

@@ -1,0 +1,128 @@
+.cards--cont {
+    
+    width: 100%;
+    /* background: url("../images/hero-bg-v2.jpg"); */
+
+    /* background: url("../images/bg-new4.jpg");  */
+    background: url("../images/main_bg3.png");
+    filter: grayscale(10%); 
+    
+    background-attachment: scroll;
+    background-repeat: no-repeat; 
+    background-color: rgba(0, 0, 0, 0.861);
+    background-size: cover;
+    min-height: 500px;
+    min-width: 420px;
+}
+
+.cards--cont {
+    text-decoration: none;
+    color: black;
+    font-size: 1.3rem;
+}
+
+.carosal{
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 50px;
+    padding-bottom: 150px;
+    gap: 20px;
+    flex-wrap: wrap;
+    /* filter: grayscale(100%);  */
+    /* border: 1px solid red; */
+}
+
+.terms--div{
+    color: rgb(0, 238, 255) !important;
+    text-shadow: 1px 0px #ffffff;
+    /* filter: grayscale(1%);  */
+}
+
+.termcards {
+    min-width: 270px;
+    min-height: 350px;
+    display: flex;
+    margin: 30px auto;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.1s;
+    text-decoration: none !important;
+    position: relative;
+    font-family: "Open Sans", sans-serif;
+    text-shadow: 2px 2px #000000;
+    box-shadow: 5px 5px 5px 1px black;
+    filter: grayscale(100%); 
+}
+
+.termcards:hover {
+    box-shadow: 7px 7px 7px 5px black;
+    /* box-shadow: 0px 0px 20px 5px rgb(95, 230, 225); */
+    transform: scale(1.1);
+    filter: grayscale(1%); 
+}
+
+.termcards:nth-child(2),
+.termcards:nth-child(4) {
+    top: 35px;
+}
+
+.termcards:nth-child(1) {
+    background-image: url(../images/longterm/01.jpg);
+    background-size: cover;
+}
+
+.termcards:nth-child(2) {
+    background-image: url(../images/Midterm/02.jpg);
+    background-size: cover;
+}
+
+.termcards:nth-child(3) {
+    background-image: url(../images/Shortterm/01.jpg);
+    background-size: cover;
+}
+
+.termcards:nth-child(4) {
+    background-image: url(../images/Livestock/Goat.jpg);
+    background-size: cover;
+}
+
+.termcards .terms--div{
+    color: var(--default);
+    position: absolute;
+    bottom: 20px;
+    font-weight: 600;
+}
+.termcards:hover .terms--div{
+    font-size: 25px;
+    bottom: 14px;
+}
+
+@media only screen and (max-width: 875px){
+    .termcards:nth-child(2),
+.termcards:nth-child(4) {
+    top: 0px;
+}
+}
+@media only screen and (max-width: 601px){
+    .cards--cont{
+        scroll-behavior: smooth;
+        overflow-x: auto;
+    }
+    .carosal{
+        width:max-content;
+        overflow-x: scroll;
+        flex-wrap: nowrap;
+        scroll-behavior: smooth;
+        scroll-snap-type: x mandatory;
+        justify-content: space-between;
+    }
+    .termcards{
+        scroll-snap-align:center;
+        scroll-snap-stop: always;
+        margin: 0 10px;
+    }
+}

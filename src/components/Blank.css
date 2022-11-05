@@ -1,0 +1,15 @@
+.blank{
+    padding: 50px 0;
+    /* border: 1px solid red; */
+    min-width: 420px;
+}
+@media only screen and (max-width: 1762px){
+    .blank{
+        display:none;
+    }
+}
+@media only screen and (max-width: 999px){
+    .blank{
+        display:block;
+    }
+}

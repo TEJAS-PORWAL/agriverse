@@ -1,0 +1,11 @@
+.coming{
+    /* border: 1px solid red; */
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:#fff;
+    min-width: 420px;
+}
+
