@@ -56,7 +56,7 @@ function App() {
         <Routes>
           <Route
             exact
-            path="/"
+            path="/agriverse/"
             element={
               <>
                 <Navbar />
@@ -74,7 +74,7 @@ function App() {
               </>
             }
           />
-          <Route exact path="/Roadmap" element={<>
+          <Route exact path="/agriverse/Roadmap" element={<>
             <Navbar />
             <Roadmap />
             <Populatediv />
@@ -82,7 +82,7 @@ function App() {
             {/* <Footer/> */}
           </>
           } />
-          <Route exact path="/About" element={<>
+          <Route exact path="/agriverse/About" element={<>
             <Navbar />
             <About />
           </>
@@ -90,7 +90,7 @@ function App() {
           />
           <Route
             exact
-            path="/Cardsection/*"
+            path="/agriverse/Cardsection/*"
             element={
               <>
                 <Navbar />
@@ -100,7 +100,7 @@ function App() {
           ></Route>
           <Route
             exact
-            path="/Comingsoon"
+            path="/agriverse/Comingsoon"
             element={
               <>
                 <Navbar />
