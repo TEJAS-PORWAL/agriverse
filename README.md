@@ -39,3 +39,6 @@ Acquisition of ownership of the crops/trees is only possible through our NFTs.
    <h3> PR's are most welcome if you feel like contributing to this repository.
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="45" height="45" />
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beaming%20Face%20with%20Smiling%20Eyes.png" alt="Beaming Face with Smiling Eyes" width="45" height="45" />
+  
+  <hr/>
+  <h2 align="center"> BUILT WITH <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beating%20Heart.png" alt="Beating Heart" width="45" height="45" /> by TEJAS PORWAL</h2>
