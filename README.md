@@ -1,70 +1,41 @@
-# Getting Started with Create React App
+![MasterHead](https://theagriverse.com/img/island3-mobile.png)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+<img  height=200  src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSyYK2VpwDUl3cuokcPshpM6huUGec0tPoj4g&usqp=CAU" align="right" />
 
-In the project directory, you can run:
+<h1 align="center" > AGRIVERSE </h1>
+<p align="justify" width="100">   Plant to Earn. A Web 3.0 based decentralized Agriculture where you get real piece of land/crop/livestock as NFT with 24/7 live monitoring through special drones and cameras. Also paying unbelievable APY for all your assets/crops/NFTS and play to earn game which keeps entertaining and ensures continuous earning for you. The mode of play is a new concept in the world of gaming and one that gamers can leverage on in order to maximize profit.  </p>
 
-### `npm start`
+<img src="https://forthebadge.com/images/badges/built-with-love.svg" width="130" alt="made with love  markdown badge" >
+<br/>
+<hr/>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<p align="justify">
+  <img align="right" width=400 height=400 src="https://user-images.githubusercontent.com/74038190/212741999-016fddbd-617a-4448-8042-0ecf907aea25.gif"/>
+  Agriverse NFTs are real life valued fungible tokens. There are 10,000 uniquely designed NFTs, each created to cater to a specific agricultural asset or product such as livestock and food crops or trees bidding on request. It is important to note that the NFTs are as vast as agriculture itself and can be used in the plant-to-earn game model developed for the ecosystem.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+It was precisely with this colossal market in mind that the Agriverse developers created the Agriverse game, using blockchain technology that will provide holders with daily gains in the stakeout model planned for the next updates of the game, where their farm owners will have passive income, in addition to of gains from hunting crops.
 
-### `npm test`
+Acquisition of ownership of the crops/trees is only possible through our NFTs.
+  </p>
+ 
+ <br/>
+ <br/>
+ <br/>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+ <hr/>
+ 
+ <br/>
+ <br/>
+ 
+ <p> Primarily this project use pretty much basic to intermediate concept of
+  <br/>
+ <img src="https://user-images.githubusercontent.com/74038190/212257454-16e3712e-945a-4ca2-b238-408ad0bf87e6.gif" width="100">
+ <img src="https://user-images.githubusercontent.com/74038190/212257467-871d32b7-e401-42e8-a166-fcfd7baa4c6b.gif" width="100">
+ <img src="https://user-images.githubusercontent.com/74038190/212280805-9bcb336b-8c55-46a8-abf8-ff286ab55472.gif" width="100">
+ <img src="https://user-images.githubusercontent.com/74038190/212281775-b468df30-4edc-4bf8-a4ee-f52e1aaddc86.gif" width="100">
+   </p>
+   
+   <h3> PR's are most welcome if you feel like contributing to this repository.
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Hand%20gestures/Handshake.png" alt="Handshake" width="45" height="45" />
+  <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Beaming%20Face%20with%20Smiling%20Eyes.png" alt="Beaming Face with Smiling Eyes" width="45" height="45" />
